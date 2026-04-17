@@ -59,45 +59,5 @@ You can comment this section out prior to final report with data collection.
 #### Differences from pre-data collection methods plan
   Any differences from what was described as the original plan, or “none”.
 
-
-## Results
-
-
-### Data preparation
-
-Data preparation following the analysis plan.
-	
-```{r include=F}
-### Data Preparation
-
-#### Load Relevant Libraries and Functions
-
-#### Import data
-
-#### Data exclusion / filtering
-
-#### Prepare data for analysis - create columns etc.
-```
-
-### Confirmatory analysis
-
-The analyses as specified in the analysis plan.  
-
-*Side-by-side graph with original graph is ideal here*
-
-### Exploratory analyses
-
-Any follow-up analyses desired (not required).  
-
-## Discussion
-
-### Summary of Replication Attempt
-
-Open the discussion section with a paragraph summarizing the primary result from the confirmatory analysis and the assessment of whether it replicated, partially replicated, or failed to replicate the original result.  
-
-### Commentary
-
-Add open-ended commentary (if any) reflecting (a) insights from follow-up exploratory analysis, (b) assessment of the meaning of the replication (or not) - e.g., for a failure to replicate, are the differences between original and present study ones that definitely, plausibly, or are unlikely to have been moderators of the result, and (c) discussion of any objections or challenges raised by the current and original authors about the replication attempt.  None of these need to be long.
-
 Kim, N., Wellwood, A., & Yoshida, M. (2024). Processing wh-filler-gap dependencies. Quarterly Journal of Experimental Psychology, 77(12), 2391-2417.
 
