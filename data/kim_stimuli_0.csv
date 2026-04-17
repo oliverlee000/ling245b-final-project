@@ -1,0 +1,385 @@
+no,exp_id,condition,item_type,item_id,stimulus
+1,1a,a,1,1a-1,"A: How didn't Mary criticize John?
+B: Harshly."
+2,1a,b,1,1a-1,"A: Didn't Mary criticize John?
+B: No, she didn't."
+3,1a,c,1,1a-1,"A: Why didn't Mary criticize John?
+B: Because his answer was correct."
+4,1a,d,1,1a-1,"A: Why didn't Mary criticize John?
+B: In order to look nice."
+5,1a,a,2,1a-2,"A: How didn't Patrick scold Naomi?
+B: Harshly."
+6,1a,b,2,1a-2,"A: Didn't Patrick scold Naomi?
+B: No, he didn't."
+7,1a,c,2,1a-2,"A: Why didn't Patrick scold Naomi?
+B: Because Naomi was nice."
+8,1a,d,2,1a-2,"A: Why didn't Patrick scold Naomi?
+B: In order to pretend that he is a nice person."
+9,1a,a,3,1a-3,"A: How didn't Alexis hit Bob?
+B: Harshly."
+10,1a,b,3,1a-3,"A: Didn't Alexis hit Bob?
+B: No, she didn't."
+11,1a,c,3,1a-3,"A: Why didn't Alexis hit Bob?
+B: Because Bob didn't do anything wrong."
+12,1a,d,3,1a-3,"A: Why didn't Alexis hit Bob?
+B: In order to protect herself from being attacked."
+13,1a,a,4,1a-4,"A: How didn't Sean shout at Kate?
+B: Loudly."
+14,1a,b,4,1a-4,"A: Didn't Sean shout at Kate?
+B: No, he didn't."
+15,1a,c,4,1a-4,"A: Why didn't Sean shout at Kate?
+B: Because Sean was not annoyed at Kate."
+16,1a,d,4,1a-4,"A: Why didn't Sean shout at Kate?
+B: In order to look calm."
+17,1a,a,5,1a-5,"A: How didn't Lauren yell at Seth?
+B: Constantly."
+18,1a,b,5,1a-5,"A: Didn't Lauren yell at Seth?
+B: No, she didn't."
+19,1a,c,5,1a-5,"A: Why didn't Lauren yell at Seth?
+B: Because he was close-by."
+20,1a,d,5,1a-5,"A: Why didn't Lauren yell at Seth?
+B: In order to feel less guilty."
+21,1a,a,6,1a-6,"A: How didn't Kate follow Rachel?
+B: Intensely."
+22,1a,b,6,1a-6,"A: Didn't Kate follow Rachel?
+B: No, she didn't."
+23,1a,c,6,1a-6,"A: Why didn't Kate follow Rachel?
+B: Because she was tired."
+24,1a,d,6,1a-6,"A: Why didn't Kate follow Rachel?
+B: In order to remain safe."
+25,1a,a,7,1a-7,"A: How didn't Helen betray Lydia?
+B: Predictably."
+26,1a,b,7,1a-7,"A: Didn't Helen betray Lydia?
+B: No, she didn't."
+27,1a,c,7,1a-7,"A: Why didn't Helen betray Lydia?
+B: Because Lydia was her best friend."
+28,1a,d,7,1a-7,"A: Why didn't Helen betray Lydia?
+B: In order to remain good friends."
+29,1a,a,8,1a-8,"A: How didn't Eli chase Lisa?
+B: Quickly."
+30,1a,b,8,1a-8,"A: Didn't Eli chase Lisa?
+B: No, he didn't."
+31,1a,c,8,1a-8,"A: Why didn't Eli chase Lisa?
+B: Because Eli was tired of running."
+32,1a,d,8,1a-8,"A: Why didn't Eli chase Lisa?
+B: In order to take a rest."
+33,1a,a,9,1a-9,"A: How didn't Marissa compete with Sandy?
+B: Effectively."
+34,1a,b,9,1a-9,"A: Didn't Marissa compete with Sandy?
+B: No, she didn't."
+35,1a,c,9,1a-9,"A: Why didn't Marissa compete with Sandy?
+B: Because Marissa is not a competitive person."
+36,1a,d,9,1a-9,"A: Why didn't Marissa compete with Sandy?
+B: In order to save her energy."
+37,1a,a,10,1a-10,"A: How didn't Peter kiss Jordan?
+B: Passionately."
+38,1a,b,10,1a-10,"A: Didn't Marissa compete with Sandy?
+B: No, she didn't."
+39,1a,c,10,1a-10,"A: Why didn't Peter kiss Jordan?
+B: Because Peter hated Jordan."
+40,1a,d,10,1a-10,"A: Why didn't Peter kiss Jordan?
+B: In order to hide his feelings."
+41,1a,a,11,1a-11,"A: How didn't Jenny teach Ryan?
+B: Efficiently."
+42,1a,b,11,1a-11,"A: Didn't Jenny teach Ryan?
+B: Yes, she did."
+43,1a,c,11,1a-11,"A: Why didn't Jenny teach Ryan?
+B: Because she was too tired."
+44,1a,d,11,1a-11,"A: Why didn't Jenny teach Ryan?
+B: In order to save her precious time."
+45,1a,a,12,1a-12,"A: How didn't Scott run with Naomi?
+B: Immediately."
+46,1a,b,12,1a-12,"A: Didn't Scott run with Naomi?
+B: Yes, he did."
+47,1a,c,12,1a-12,"A: Why didn't Scott run with Naomi?
+B: Because he was so exhausted."
+48,1a,d,12,1a-12,"A: Why didn't Scott run with Naomi?
+B: In order to try a new path."
+49,1a,a,13,1a-13,"A: How didn't Narene walk with Amy?
+B: Rapidly."
+50,1a,b,13,1a-13,"A: Didn't Narene walk with Amy?
+B: Yes, she did."
+51,1a,c,13,1a-13,"A: Why didn't Narene walk with Amy?
+B: Because Narene was sick."
+52,1a,d,13,1a-13,"A: Why didn't Narene walk with Amy?
+B: In order to get home faster."
+53,1a,a,14,1a-14,"A: How didn't Ariana yell at Selah?
+B: Quietly."
+54,1a,b,14,1a-14,"A: Didn't Ariana yell at Selah?
+B: Yes, she did."
+55,1a,c,14,1a-14,"A: Why didn't Ariana yell at Selah?
+B: Because Ariana was too polite."
+56,1a,d,14,1a-14,"A: Why didn't Ariana yell at Selah?
+B: In order to pretend she is a nice person."
+57,1a,a,15,1a-15,"A: How didn't Cara visit Jeremy?
+B: Frequently."
+58,1a,b,15,1a-15,"A: Didn't Cara visit Jeremy?
+B: No, she didn't."
+59,1a,c,15,1a-15,"A: Why didn't Cara visit Jeremy?
+B: Because airline tickets are expensive."
+60,1a,d,15,1a-15,"A: Why didn't Cara visit Jeremy?
+B: In order to prepare for tomorrow's exam."
+61,1a,a,16,1a-16,"A: How didn't Allison assist Travis?
+B: Willingly."
+62,1a,b,16,1a-16,"A: Didn't Allison assist Travis?
+B: Yes, she did."
+63,1a,c,16,1a-16,"A: Why didn't Allison assist Travis?
+B: Because she was angry."
+64,1a,d,16,1a-16,"A: Why didn't Allison assist Travis?
+B: In order to wrap up her work."
+65,1a,a,17,1a-17,"A: How didn't Jolie help Erin?
+B: Voluntarily."
+66,1a,b,17,1a-17,"A: Didn't Jolie help Erin?
+B: Yes, she did."
+67,1a,c,17,1a-17,"A: Why didn't Jolie help Erin?
+B: Because Jolie was busy."
+68,1a,d,17,1a-17,"A: Why didn't Jolie help Erin?
+B: In order to focus on her own work."
+69,1a,a,18,1a-18,"A: How didn't Cindy hug Jennifer?
+B: Softly."
+70,1a,b,18,1a-18,"A: Didn't Cindy hug Jennifer?
+B: Yes, she did."
+71,1a,c,18,1a-18,"A: Why didn't Cindy hug Jennifer?
+B: Because Jennifer had a cold."
+72,1a,d,18,1a-18,"A: Why didn't Cindy hug Jennifer?
+B: In order to avoid getting a cold."
+73,1a,a,19,1a-19,"A: How didn't Daniel tease Emma?
+B: Intentionally."
+74,1a,b,19,1a-19,"A: Didn't Daniel tease Emma?
+B: Yes, he did."
+75,1a,c,19,1a-19,"A: Why didn't Daniel tease Emma?
+B: Because Emma was very sensitive."
+76,1a,d,19,1a-19,"A: Why didn't Daniel tease Emma?
+B: In order to remain in a good relationship."
+77,1a,a,20,1a-20,"A: How didn't Rueben see Molly?
+B: Clearly."
+78,1a,b,20,1a-20,"A: Didn't Rueben see Molly?
+B: Yes, he did."
+79,1a,c,20,1a-20,"A: Why didn't Rueben see Molly?
+B: Because Molly was mean to him."
+80,1a,d,20,1a-20,"A: Why didn't Rueben see Molly?
+B: In order to see another person."
+81,1a,a,21,1a-21,"A: How didn't James scare Dorothy?
+B: Purposefully."
+82,1a,b,21,1a-21,"A: Didn't James scare Dorothy?
+B: Yes, he did."
+83,1a,c,21,1a-21,"A: Why didn't James scare Dorothy?
+B: Because Dorothy already knew that he would scare her."
+84,1a,d,21,1a-21,"A: Why didn't James scare Dorothy?
+B: In order to look charming."
+85,1a,a,22,1a-22,"A: How didn't Tom work with Nancy?
+B: Purposefully."
+86,1a,b,22,1a-22,"A: Didn't Tom work with Nancy?
+B: Yes, he did."
+87,1a,c,22,1a-22,"A: Why didn't Tom work with Nancy?
+B: Because Tom wanted to work by himself."
+88,1a,d,22,1a-22,"A: Why didn't Tom work with Nancy?
+B: In order to work by himself."
+89,1a,a,23,1a-23,"A: How didn't Jessica talk to Elizabeth?
+B: Nicely."
+90,1a,b,23,1a-23,"A: Didn't Jessica talk to Elizabeth?
+B: No, she didn't."
+91,1a,c,23,1a-23,"A: Why didn't Jessica talk to Elizabeth?
+B: Because Elizabeth stole her lunch."
+92,1a,d,23,1a-23,"A: Why didn't Jessica talk to Elizabeth?
+B: In order to spend her time more efficiently."
+93,1a,a,24,1a-24,"A: How didn't Morgan greet Nathan?
+B: Happily."
+94,1a,b,24,1a-24,"A: Didn't Morgan greet Nathan?
+B: No, she didn't."
+95,1a,c,24,1a-24,"A: Why didn't Morgan greet Nathan?
+B: Because Nathan was with his friends."
+96,1a,d,24,1a-24,"A: Why didn't Morgan greet Nathan?
+B: In order to stay focused."
+97,1b_2a,a,1,1b_2a-1,The aide noticed who the generous teacher that the exemplary dean employed graciously and happily gave the prize to.
+98,1b_2a,b,1,1b_2a-1,The aide noticed how the generous teacher that the exemplary dean employed graciously and happily gave the prize to the student.
+99,1b_2a,c,1,1b_2a-1,The aide noticed that the generous teacher that the exemplary dean employed graciously and happily gave the prize to the student.
+100,1b_2a,d,1,1b_2a-1,The aide noticed why the generous teacher that the exemplary dean employed graciously and happily gave the prize to the student.
+101,1b_2a,a,2,1b_2a-2,The student noticed who the tough coach that the popular athlete admired obviously and unnecessarily paid more attention to the quarterback.
+102,1b_2a,b,2,1b_2a-2,The student noticed how the tough coach that the popular athlete admired obviously and unnecessarily paid more attention to the quarterback.
+103,1b_2a,c,2,1b_2a-2,The student noticed that the tough coach that the popular athlete admired obviously and unnecessarily paid more attention to the quarterback.
+104,1b_2a,d,2,1b_2a-2,The student noticed why the tough coach that the popular athlete admired obviously and unnecessarily paid more attention to the quarterback.
+105,1b_2a,a,3,1b_2a-3,The pilot noticed who the pretty attendant that the famous airline hired kindly and thoughtfully gave extra attention to her daughter.
+106,1b_2a,b,3,1b_2a-3,The pilot noticed how the pretty attendant that the famous airline hired kindly and thoughtfully gave extra attention to her daughter.
+107,1b_2a,c,3,1b_2a-3,The pilot noticed that the pretty attendant that the famous airline hired kindly and thoughtfully gave extra attention to her daughter.
+108,1b_2a,d,3,1b_2a-3,The pilot noticed why the pretty attendant that the famous airline hired kindly and thoughtfully gave extra attention to her daughter.
+109,1b_2a,a,4,1b_2a-4,The panel remembered who the awkward scientist that the unconventional professor liked benignly and hesitantly awarded the grant to the researcher.
+110,1b_2a,b,4,1b_2a-4,The panel remembered how the awkward scientist that the unconventional professor liked benignly and hesitantly awarded the grant to the researcher.
+111,1b_2a,c,4,1b_2a-4,The panel remembered that the awkward scientist that the unconventional professor liked benignly and hesitantly awarded the grant to the researcher.
+112,1b_2a,d,4,1b_2a-4,The panel remembered why the awkward scientist that the unconventional professor liked benignly and hesitantly awarded the grant to the researcher.
+113,1b_2a,a,5,1b_2a-5,The pianist remembered who the competent conductor that the beautiful cellist adored secretly and woefully sent a letter to the oboist.
+114,1b_2a,b,5,1b_2a-5,The pianist remembered how the competent conductor that the beautiful cellist adored secretly and woefully sent a letter to the oboist.
+115,1b_2a,c,5,1b_2a-5,The pianist remembered that the competent conductor that the beautiful cellist adored secretly and woefully sent a letter to the oboist.
+116,1b_2a,d,5,1b_2a-5,The pianist remembered why the competent conductor that the beautiful cellist adored secretly and woefully sent a letter to the oboist.
+117,1b_2a,a,6,1b_2a-6,The clerk remembered who the rich banker that the new manager distrusted cautiously and wrongfully cashed a check for the agent.
+118,1b_2a,b,6,1b_2a-6,The clerk remembered how the rich banker that the new manager distrusted cautiously and wrongfully cashed a check for the agent.
+119,1b_2a,c,6,1b_2a-6,The clerk remembered that the rich banker that the new manager distrusted cautiously and wrongfully cashed a check for the agent.
+120,1b_2a,d,6,1b_2a-6,The clerk remembered why the rich banker that the new manager distrusted cautiously and wrongfully cashed a check for the agent.
+121,1b_2a,a,7,1b_2a-7,The busboy revealed who the busy waitress that the talented cook hated happily and leisurely served the meal to the family.
+122,1b_2a,b,7,1b_2a-7,The busboy revealed how the busy waitress that the talented cook hated happily and leisurely served the meal to the family.
+123,1b_2a,c,7,1b_2a-7,The busboy revealed that the busy waitress that the talented cook hated happily and leisurely served the meal to the family.
+124,1b_2a,d,7,1b_2a-7,The busboy revealed why the busy waitress that the talented cook hated happily and leisurely served the meal to the family.
+125,1b_2a,a,8,1b_2a-8,The mailman revealed who the recent homeowner that the nosy neighbor followed suspiciously and randomly received a letter from the government.
+126,1b_2a,b,8,1b_2a-8,The mailman revealed how the recent homeowner that the nosy neighbor followed suspiciously and randomly received a letter from the government.
+127,1b_2a,c,8,1b_2a-8,The mailman revealed that the recent homeowner that the nosy neighbor followed suspiciously and randomly received a letter from the government.
+128,1b_2a,d,8,1b_2a-8,The mailman revealed why the recent homeowner that the nosy neighbor followed suspiciously and randomly received a letter from the government.
+129,1b_2a,a,9,1b_2a-9,The boxer revealed who the excellent trainer that the fierce competitor utilized effectively and frequently learned his trade from his father.
+130,1b_2a,b,9,1b_2a-9,The boxer revealed how the excellent trainer that the fierce competitor utilized effectively and frequently learned his trade from his father.
+131,1b_2a,c,9,1b_2a-9,The boxer revealed that the excellent trainer that the fierce competitor utilized effectively and frequently learned his trade from his father.
+132,1b_2a,d,9,1b_2a-9,The boxer revealed why the excellent trainer that the fierce competitor utilized effectively and frequently learned his trade from his father.
+133,1b_2a,a,10,1b_2a-10,The critic mentioned who the renowned chef that the friendly hostess liked frequently and cheerfully served the appetizer to the patron.
+134,1b_2a,b,10,1b_2a-10,The critic mentioned how the renowned chef that the friendly hostess liked frequently and cheerfully served the appetizer to the patron.
+135,1b_2a,c,10,1b_2a-10,The critic mentioned that the renowned chef that the friendly hostess liked frequently and cheerfully served the appetizer to the patron.
+136,1b_2a,d,10,1b_2a-10,The critic mentioned why the renowned chef that the friendly hostess liked frequently and cheerfully served the appetizer to the patron.
+137,1b_2a,a,11,1b_2a-11,The assistant mentioned who the lovely bride that the skilled tailor intimidated purposefully and obviously sold the dress to a celebrity.
+138,1b_2a,b,11,1b_2a-11,The assistant mentioned how the lovely bride that the skilled tailor intimidated purposefully and obviously sold the dress to a celebrity.
+139,1b_2a,c,11,1b_2a-11,The assistant mentioned that the lovely bride that the skilled tailor intimidated purposefully and obviously sold the dress to a celebrity.
+140,1b_2a,d,11,1b_2a-11,The assistant mentioned why the lovely bride that the skilled tailor intimidated purposefully and obviously sold the dress to a celebrity.
+141,1b_2a,a,12,1b_2a-12,The baker mentioned who the young mother that the sweet child hugged hurriedly and frantically bought the cake for her sister.
+142,1b_2a,b,12,1b_2a-12,The baker mentioned how the young mother that the sweet child hugged hurriedly and frantically bought the cake for her sister.
+143,1b_2a,c,12,1b_2a-12,The baker mentioned that the young mother that the sweet child hugged hurriedly and frantically bought the cake for her sister.
+144,1b_2a,d,12,1b_2a-12,The baker mentioned why the young mother that the sweet child hugged hurriedly and frantically bought the cake for her sister.
+145,1b_2a,a,13,1b_2a-13,The surgeon disclosed who the ambitious nurse that the old doctor recommended unfairly and ignorantly promised the cure to the patient.
+146,1b_2a,b,13,1b_2a-13,The surgeon disclosed how the ambitious nurse that the old doctor recommended unfairly and ignorantly promised the cure to the patient.
+147,1b_2a,c,13,1b_2a-13,The surgeon disclosed that the ambitious nurse that the old doctor recommended unfairly and ignorantly promised the cure to the patient.
+148,1b_2a,d,13,1b_2a-13,The surgeon disclosed why the ambitious nurse that the old doctor recommended unfairly and ignorantly promised the cure to the patient.
+149,1b_2a,a,14,1b_2a-14,The farmer disclosed who the passionate rancher that the boring businessman judged unnecessarily and intensely studied in college with the professors.
+150,1b_2a,b,14,1b_2a-14,The farmer disclosed how the passionate rancher that the boring businessman judged unnecessarily and intensely studied in college with the professors.
+151,1b_2a,c,14,1b_2a-14,The farmer disclosed that the passionate rancher that the boring businessman judged unnecessarily and intensely studied in college with the professors.
+152,1b_2a,d,14,1b_2a-14,The farmer disclosed why the passionate rancher that the boring businessman judged unnecessarily and intensely studied in college with the professors.
+153,1b_2a,a,15,1b_2a-15,The artist disclosed who her rigid parents that her infamous boyfriend met briefly and awkwardly traveled to Europe with some friends.
+154,1b_2a,b,15,1b_2a-15,The artist disclosed how her rigid parents that her infamous boyfriend met briefly and awkwardly traveled to Europe with some friends.
+155,1b_2a,c,15,1b_2a-15,The artist disclosed that her rigid parents that her infamous boyfriend met briefly and awkwardly traveled to Europe with some friends.
+156,1b_2a,d,15,1b_2a-15,The artist disclosed why her rigid parents that her infamous boyfriend met briefly and awkwardly traveled to Europe with some friends.
+157,1b_2a,a,16,1b_2a-16,The father considered who the naive babysitter that the spunky children loved unexpectedly and benevolently handed the toys to the grandma.
+158,1b_2a,b,16,1b_2a-16,The father considered how the naive babysitter that the spunky children loved unexpectedly and benevolently handed the toys to the grandma.
+159,1b_2a,c,16,1b_2a-16,The father considered that the naive babysitter that the spunky children loved unexpectedly and benevolently handed the toys to the grandma.
+160,1b_2a,d,16,1b_2a-16,The father considered why the naive babysitter that the spunky children loved unexpectedly and benevolently handed the toys to the grandma.
+161,1b_2a,a,17,1b_2a-17,The rapper considered who the sketchy promoter that the famous label suggested hastily and obliviously discussed the album with a stranger.
+162,1b_2a,b,17,1b_2a-17,The rapper considered how the sketchy promoter that the famous label suggested hastily and obliviously discussed the album with a stranger.
+163,1b_2a,c,17,1b_2a-17,The rapper considered that the sketchy promoter that the famous label suggested hastily and obliviously discussed the album with a stranger.
+164,1b_2a,d,17,1b_2a-17,The rapper considered why the sketchy promoter that the famous label suggested hastily and obliviously discussed the album with a stranger.
+165,1b_2a,a,18,1b_2a-18,The lawyer considered who the important client that the affluent firm valued immorally and heavily influenced the case for the opposition.
+166,1b_2a,b,18,1b_2a-18,The lawyer considered how the important client that the affluent firm valued immorally and heavily influenced the case for the opposition.
+167,1b_2a,c,18,1b_2a-18,The lawyer considered that the important client that the affluent firm valued immorally and heavily influenced the case for the opposition.
+168,1b_2a,d,18,1b_2a-18,The lawyer considered why the important client that the affluent firm valued immorally and heavily influenced the case for the opposition.
+169,1b_2a,a,19,1b_2a-19,The dean heard who the unpopular committee that the intelligent professor respected judiciously and perceptively assigned the responsibility to the student.
+170,1b_2a,b,19,1b_2a-19,The dean heard how the unpopular committee that the intelligent professor respected judiciously and perceptively assigned the responsibility to the student.
+171,1b_2a,c,19,1b_2a-19,The dean heard that the unpopular committee that the intelligent professor respected judiciously and perceptively assigned the responsibility to the student.
+172,1b_2a,d,19,1b_2a-19,The dean heard why the unpopular committee that the intelligent professor respected judiciously and perceptively assigned the responsibility to the student.
+173,1b_2a,a,20,1b_2a-20,The barista heard who the rude patron that the terrible manager knew inappropriately and inconveniently discussed the election with a lawyer.
+174,1b_2a,b,20,1b_2a-20,The barista heard how the rude patron that the terrible manager knew inappropriately and inconveniently discussed the election with a lawyer.
+175,1b_2a,c,20,1b_2a-20,The barista heard that the rude patron that the terrible manager knew inappropriately and inconveniently discussed the election with a lawyer.
+176,1b_2a,d,20,1b_2a-20,The barista heard why the rude patron that the terrible manager knew inappropriately and inconveniently discussed the election with a lawyer.
+177,1b_2a,a,21,1b_2a-21,The couple heard who the desirable actress that the arrogant singer disliked fervently and embarrassingly argued her opinion to her director.
+178,1b_2a,b,21,1b_2a-21,The couple heard how the desirable actress that the arrogant singer disliked fervently and embarrassingly argued her opinion to her director.
+179,1b_2a,c,21,1b_2a-21,The couple heard that the desirable actress that the arrogant singer disliked fervently and embarrassingly argued her opinion to her director.
+180,1b_2a,d,21,1b_2a-21,The couple heard why the desirable actress that the arrogant singer disliked fervently and embarrassingly argued her opinion to her director.
+181,1b_2a,a,22,1b_2a-22,The analyst confessed who the unpleasant mathematician that the gracious employer contracted knowingly and deliberately entrusted the data to the stranger.
+182,1b_2a,b,22,1b_2a-22,The analyst confessed how the unpleasant mathematician that the gracious employer contracted knowingly and deliberately entrusted the data to the stranger.
+183,1b_2a,c,22,1b_2a-22,The analyst confessed that the unpleasant mathematician that the gracious employer contracted knowingly and deliberately entrusted the data to the stranger.
+184,1b_2a,d,22,1b_2a-22,The analyst confessed why the unpleasant mathematician that the gracious employer contracted knowingly and deliberately entrusted the data to the stranger.
+185,1b_2a,a,23,1b_2a-23,The researcher confessed who the rebellious student that the pretentious university encouraged ignorantly and unjustly copied the answers from the internet.
+186,1b_2a,b,23,1b_2a-23,The researcher confessed how the rebellious student that the pretentious university encouraged ignorantly and unjustly copied the answers from the internet.
+187,1b_2a,c,23,1b_2a-23,The researcher confessed that the rebellious student that the pretentious university encouraged ignorantly and unjustly copied the answers from the internet.
+188,1b_2a,d,23,1b_2a-23,The researcher confessed why the rebellious student that the pretentious university encouraged ignorantly and unjustly copied the answers from the internet.
+189,1b_2a,a,24,1b_2a-24,The traveler confessed who the novice camper that the advanced hiker followed quietly and privately brought the food for the animals.
+190,1b_2a,b,24,1b_2a-24,The traveler confessed how the novice camper that the advanced hiker followed quietly and privately brought the food for the animals.
+191,1b_2a,c,24,1b_2a-24,The traveler confessed that the novice camper that the advanced hiker followed quietly and privately brought the food for the animals.
+192,1b_2a,d,24,1b_2a-24,The traveler confessed why the novice camper that the advanced hiker followed quietly and privately brought the food for the animals.
+193,1c_2b,a,1,1c_2b-1,The aide noticed who the generous teacher that the exemplary dean employed graciously and happily gave the prize to.
+194,1c_2b,b,1,1c_2b-1,Who noticed that the generous teacher that the exemplary dean employed graciously and happily gave the prize to the student?
+195,1c_2b,c,1,1c_2b-1,The aide noticed that the generous teacher that the exemplary dean employed graciously and happily gave the prize to the student.
+196,1c_2b,d,1,1c_2b-1,The aide noticed why the generous teacher that the exemplary dean employed graciously and happily gave the prize to the student.
+197,1c_2b,a,2,1c_2b-2,The student noticed who the tough coach that the popular athlete admired obviously and unnecessarily paid more attention to the quarterback.
+198,1c_2b,b,2,1c_2b-2,Who noticed that the tough coach that the popular athlete admired obviously and unnecessarily paid more attention to the quarterback?
+199,1c_2b,c,2,1c_2b-2,The student noticed that the tough coach that the popular athlete admired obviously and unnecessarily paid more attention to the quarterback.
+200,1c_2b,d,2,1c_2b-2,The student noticed why the tough coach that the popular athlete admired obviously and unnecessarily paid more attention to the quarterback.
+201,1c_2b,a,3,1c_2b-3,The pilot noticed who the pretty attendant that the famous airline hired kindly and thoughtfully gave extra attention to her daughter.
+202,1c_2b,b,3,1c_2b-3,Who noticed that the pretty attendant that the famous airline hired kindly and thoughtfully gave extra attention to her daughter?
+203,1c_2b,c,3,1c_2b-3,The pilot noticed that the pretty attendant that the famous airline hired kindly and thoughtfully gave extra attention to her daughter.
+204,1c_2b,d,3,1c_2b-3,The pilot noticed why the pretty attendant that the famous airline hired kindly and thoughtfully gave extra attention to her daughter.
+205,1c_2b,a,4,1c_2b-4,The panel remembered who the awkward scientist that the unconventional professor liked benignly and hesitantly awarded the grant to the researcher.
+206,1c_2b,b,4,1c_2b-4,Who remembered that the awkward scientist that the unconventional professor liked benignly and hesitantly awarded the grant to the researcher?
+207,1c_2b,c,4,1c_2b-4,The panel remembered that the awkward scientist that the unconventional professor liked benignly and hesitantly awarded the grant to the researcher.
+208,1c_2b,d,4,1c_2b-4,The panel remembered why the awkward scientist that the unconventional professor liked benignly and hesitantly awarded the grant to the researcher.
+209,1c_2b,a,5,1c_2b-5,The pianist remembered who the competent conductor that the beautiful cellist adored secretly and woefully sent a letter to the oboist.
+210,1c_2b,b,5,1c_2b-5,Who remembered that the competent conductor that the beautiful cellist adored secretly and woefully sent a letter to the oboist?
+211,1c_2b,c,5,1c_2b-5,The pianist remembered that the competent conductor that the beautiful cellist adored secretly and woefully sent a letter to the oboist.
+212,1c_2b,d,5,1c_2b-5,The pianist remembered why the competent conductor that the beautiful cellist adored secretly and woefully sent a letter to the oboist.
+213,1c_2b,a,6,1c_2b-6,The clerk remembered who the rich banker that the new manager distrusted cautiously and wrongfully cashed a check for the agent.
+214,1c_2b,b,6,1c_2b-6,Who remembered that the rich banker that the new manager distrusted cautiously and wrongfully cashed a check for the agent?
+215,1c_2b,c,6,1c_2b-6,The clerk remembered that the rich banker that the new manager distrusted cautiously and wrongfully cashed a check for the agent.
+216,1c_2b,d,6,1c_2b-6,The clerk remembered why the rich banker that the new manager distrusted cautiously and wrongfully cashed a check for the agent.
+217,1c_2b,a,7,1c_2b-7,The busboy revealed who the busy waitress that the talented cook hated happily and leisurely served the meal to the family.
+218,1c_2b,b,7,1c_2b-7,Who revealed that the busy waitress that the talented cook hated happily and leisurely served the meal to the family?
+219,1c_2b,c,7,1c_2b-7,The busboy revealed that the busy waitress that the talented cook hated happily and leisurely served the meal to the family.
+220,1c_2b,d,7,1c_2b-7,The busboy revealed why the busy waitress that the talented cook hated happily and leisurely served the meal to the family.
+221,1c_2b,a,8,1c_2b-8,The mailman revealed who the recent homeowner that the nosy neighbor followed suspiciously and randomly received a letter from the government.
+222,1c_2b,b,8,1c_2b-8,Who revealed that the recent homeowner that the nosy neighbor followed suspiciously and randomly received a letter from the government?
+223,1c_2b,c,8,1c_2b-8,The mailman revealed that the recent homeowner that the nosy neighbor followed suspiciously and randomly received a letter from the government.
+224,1c_2b,d,8,1c_2b-8,The mailman revealed why the recent homeowner that the nosy neighbor followed suspiciously and randomly received a letter from the government.
+225,1c_2b,a,9,1c_2b-9,The boxer revealed who the excellent trainer that the fierce competitor utilized effectively and frequently learned his trade from his father.
+226,1c_2b,b,9,1c_2b-9,Who revealed that the excellent trainer that the fierce competitor utilized effectively and frequently learned his trade from his father?
+227,1c_2b,c,9,1c_2b-9,The boxer revealed that the excellent trainer that the fierce competitor utilized effectively and frequently learned his trade from his father.
+228,1c_2b,d,9,1c_2b-9,The boxer revealed why the excellent trainer that the fierce competitor utilized effectively and frequently learned his trade from his father.
+229,1c_2b,a,10,1c_2b-10,The critic mentioned who the renowned chef that the friendly hostess liked frequently and cheerfully served the appetizer to the patron.
+230,1c_2b,b,10,1c_2b-10,Who mentioned that the renowned chef that the friendly hostess liked frequently and cheerfully served the appetizer to the patron?
+231,1c_2b,c,10,1c_2b-10,The critic mentioned that the renowned chef that the friendly hostess liked frequently and cheerfully served the appetizer to the patron.
+232,1c_2b,d,10,1c_2b-10,The critic mentioned why the renowned chef that the friendly hostess liked frequently and cheerfully served the appetizer to the patron.
+233,1c_2b,a,11,1c_2b-11,The assistant mentioned who the lovely bride that the skilled tailor intimidated purposefully and obviously sold the dress to a celebrity.
+234,1c_2b,b,11,1c_2b-11,Who mentioned that the lovely bride that the skilled tailor intimidated purposefully and obviously sold the dress to a celebrity?
+235,1c_2b,c,11,1c_2b-11,The assistant mentioned that the lovely bride that the skilled tailor intimidated purposefully and obviously sold the dress to a celebrity.
+236,1c_2b,d,11,1c_2b-11,The assistant mentioned why the lovely bride that the skilled tailor intimidated purposefully and obviously sold the dress to a celebrity.
+237,1c_2b,a,12,1c_2b-12,The baker mentioned who the young mother that the sweet child hugged hurriedly and frantically bought the cake for her sister.
+238,1c_2b,b,12,1c_2b-12,Who mentioned that the young mother that the sweet child hugged hurriedly and frantically bought the cake for her sister?
+239,1c_2b,c,12,1c_2b-12,The baker mentioned that the young mother that the sweet child hugged hurriedly and frantically bought the cake for her sister.
+240,1c_2b,d,12,1c_2b-12,The baker mentioned why the young mother that the sweet child hugged hurriedly and frantically bought the cake for her sister.
+241,1c_2b,a,13,1c_2b-13,The surgeon disclosed who the ambitious nurse that the old doctor recommended unfairly and ignorantly promised the cure to the patient.
+242,1c_2b,b,13,1c_2b-13,Who disclosed that the ambitious nurse that the old doctor recommended unfairly and ignorantly promised the cure to the patient?
+243,1c_2b,c,13,1c_2b-13,The surgeon disclosed that the ambitious nurse that the old doctor recommended unfairly and ignorantly promised the cure to the patient.
+244,1c_2b,d,13,1c_2b-13,The surgeon disclosed why the ambitious nurse that the old doctor recommended unfairly and ignorantly promised the cure to the patient.
+245,1c_2b,a,14,1c_2b-14,The farmer disclosed who the passionate rancher that the boring businessman judged unnecessarily and intensely studied in college with the professors.
+246,1c_2b,b,14,1c_2b-14,Who disclosed that the passionate rancher that the boring businessman judged unnecessarily and intensely studied in college with the professors?
+247,1c_2b,c,14,1c_2b-14,The farmer disclosed that the passionate rancher that the boring businessman judged unnecessarily and intensely studied in college with the professors.
+248,1c_2b,d,14,1c_2b-14,The farmer disclosed why the passionate rancher that the boring businessman judged unnecessarily and intensely studied in college with the professors.
+249,1c_2b,a,15,1c_2b-15,The artist disclosed who her rigid parents that her infamous boyfriend met briefly and awkwardly traveled to Europe with some friends.
+250,1c_2b,b,15,1c_2b-15,Who disclosed that her rigid parents that her infamous boyfriend met briefly and awkwardly traveled to Europe with some friends?
+251,1c_2b,c,15,1c_2b-15,The artist disclosed that her rigid parents that her infamous boyfriend met briefly and awkwardly traveled to Europe with some friends.
+252,1c_2b,d,15,1c_2b-15,The artist disclosed why her rigid parents that her infamous boyfriend met briefly and awkwardly traveled to Europe with some friends.
+253,1c_2b,a,16,1c_2b-16,The father considered who the naive babysitter that the spunky children loved unexpectedly and benevolently handed the toys to the grandma.
+254,1c_2b,b,16,1c_2b-16,Who considered that the naive babysitter that the spunky children loved unexpectedly and benevolently handed the toys to the grandma?
+255,1c_2b,c,16,1c_2b-16,The father considered that the naive babysitter that the spunky children loved unexpectedly and benevolently handed the toys to the grandma.
+256,1c_2b,d,16,1c_2b-16,The father considered why the naive babysitter that the spunky children loved unexpectedly and benevolently handed the toys to the grandma.
+257,1c_2b,a,17,1c_2b-17,The rapper considered who the sketchy promoter that the famous label suggested hastily and obliviously discussed the album with a stranger.
+258,1c_2b,b,17,1c_2b-17,Who considered that the sketchy promoter that the famous label suggested hastily and obliviously discussed the album with a stranger?
+259,1c_2b,c,17,1c_2b-17,The rapper considered that the sketchy promoter that the famous label suggested hastily and obliviously discussed the album with a stranger.
+260,1c_2b,d,17,1c_2b-17,The rapper considered why the sketchy promoter that the famous label suggested hastily and obliviously discussed the album with a stranger.
+261,1c_2b,a,18,1c_2b-18,The lawyer considered who the important client that the affluent firm valued immorally and heavily influenced the case for the opposition.
+262,1c_2b,b,18,1c_2b-18,Who considered that the important client that the affluent firm valued immorally and heavily influenced the case for the opposition?
+263,1c_2b,c,18,1c_2b-18,The lawyer considered that the important client that the affluent firm valued immorally and heavily influenced the case for the opposition.
+264,1c_2b,d,18,1c_2b-18,The lawyer considered why the important client that the affluent firm valued immorally and heavily influenced the case for the opposition.
+265,1c_2b,a,19,1c_2b-19,The dean heard who the unpopular committee that the intelligent professor respected judiciously and perceptively assigned the responsibility to the student.
+266,1c_2b,b,19,1c_2b-19,Who heard that the unpopular committee that the intelligent professor respected judiciously and perceptively assigned the responsibility to the student?
+267,1c_2b,c,19,1c_2b-19,The dean heard that the unpopular committee that the intelligent professor respected judiciously and perceptively assigned the responsibility to the student.
+268,1c_2b,d,19,1c_2b-19,The dean heard why the unpopular committee that the intelligent professor respected judiciously and perceptively assigned the responsibility to the student.
+269,1c_2b,a,20,1c_2b-20,The barista heard who the rude patron that the terrible manager knew inappropriately and inconveniently discussed the election with a lawyer.
+270,1c_2b,b,20,1c_2b-20,Who heard that the rude patron that the terrible manager knew inappropriately and inconveniently discussed the election with a lawyer?
+271,1c_2b,c,20,1c_2b-20,The barista heard that the rude patron that the terrible manager knew inappropriately and inconveniently discussed the election with a lawyer.
+272,1c_2b,d,20,1c_2b-20,The barista heard why the rude patron that the terrible manager knew inappropriately and inconveniently discussed the election with a lawyer.
+273,1c_2b,a,21,1c_2b-21,The couple heard who the desirable actress that the arrogant singer disliked fervently and embarrassingly argued her opinion to her director.
+274,1c_2b,b,21,1c_2b-21,Who heard that the desirable actress that the arrogant singer disliked fervently and embarrassingly argued her opinion to her director?
+275,1c_2b,c,21,1c_2b-21,The couple heard that the desirable actress that the arrogant singer disliked fervently and embarrassingly argued her opinion to her director.
+276,1c_2b,d,21,1c_2b-21,The couple heard why the desirable actress that the arrogant singer disliked fervently and embarrassingly argued her opinion to her director.
+277,1c_2b,a,22,1c_2b-22,The analyst confessed who the unpleasant mathematician that the gracious employer contracted knowingly and deliberately entrusted the data to the stranger.
+278,1c_2b,b,22,1c_2b-22,Who confessed that the unpleasant mathematician that the gracious employer contracted knowingly and deliberately entrusted the data to the stranger?
+279,1c_2b,c,22,1c_2b-22,The analyst confessed that the unpleasant mathematician that the gracious employer contracted knowingly and deliberately entrusted the data to the stranger.
+280,1c_2b,d,22,1c_2b-22,The analyst confessed why the unpleasant mathematician that the gracious employer contracted knowingly and deliberately entrusted the data to the stranger.
+281,1c_2b,a,23,1c_2b-23,The researcher confessed who the rebellious student that the pretentious university encouraged ignorantly and unjustly copied the answers from the internet.
+282,1c_2b,b,23,1c_2b-23,Who confessed that the rebellious student that the pretentious university encouraged ignorantly and unjustly copied the answers from the internet?
+283,1c_2b,c,23,1c_2b-23,The researcher confessed that the rebellious student that the pretentious university encouraged ignorantly and unjustly copied the answers from the internet.
+284,1c_2b,d,23,1c_2b-23,The researcher confessed why the rebellious student that the pretentious university encouraged ignorantly and unjustly copied the answers from the internet.
+285,1c_2b,a,24,1c_2b-24,The traveler confessed who the novice camper that the advanced hiker followed quietly and privately brought the food for the animals.
+286,1c_2b,b,24,1c_2b-24,Who confessed that the novice camper that the advanced hiker followed quietly and privately brought the food for the animals?
+287,1c_2b,c,24,1c_2b-24,The traveler confessed that the novice camper that the advanced hiker followed quietly and privately brought the food for the animals.
+288,1c_2b,d,24,1c_2b-24,The traveler confessed why the novice camper that the advanced hiker followed quietly and privately brought the food for the animals.
