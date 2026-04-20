@@ -28,7 +28,7 @@
   <script src="https://unpkg.com/@jspsych/plugin-survey-multi-choice@1.1.2"></script>
 
   <!-- Stimuli -->
-  <script src="../data/stims.js"></script>
+  <script src="../data/stims_combined.js"></script>
 
   <style>
     .spr-display {
@@ -216,53 +216,51 @@
       }
 
       // --- Comprehension question (F = Yes, J = No) ---
-      if (stimulus.question) {
-        trials.push({
-          type: jsPsychHtmlKeyboardResponse,
-          stimulus: `<div class="comprehension-box">
-                       <p>${stimulus.question}</p>
-                       <p>Press <span class="key-label">F</span> for <strong>Yes</strong> &nbsp;|&nbsp;
-                          Press <span class="key-label">J</span> for <strong>No</strong></p>
-                     </div>`,
-          choices: ['f', 'j'],
-          data: Object.assign({
-            trial_type_label:  'comprehension',
-            correct_answer:    stimulus.correct_answer   // expected: 'f' or 'j'
-          }, stimulusMetadata),
-          on_finish: function(data) {
-            // Score: 'f' = Yes, 'j' = No
-            data.response_label = data.response === 'f' ? 'Yes' : 'No';
-            data.correct = (data.response === data.correct_answer);
-          }
-        });
+      trials.push({
+        type: jsPsychHtmlKeyboardResponse,
+        stimulus: `<div class="comprehension-box">
+                      <p>${stimulus.question}</p>
+                      <p>Press <span class="key-label">F</span> for <strong>Yes</strong> &nbsp;|&nbsp;
+                        Press <span class="key-label">J</span> for <strong>No</strong></p>
+                    </div>`,
+        choices: ['f', 'j'],
+        data: Object.assign({
+          trial_type_label:  'comprehension',
+          correct_answer:    stimulus.correct_answer   // expected: 'f' or 'j'
+        }, stimulusMetadata),
+        on_finish: function(data) {
+          // Score: 'f' = Yes, 'j' = No
+          data.response_label = data.response === 'f' ? 'Yes' : 'No';
+          data.correct = (data.response === data.correct_answer);
+        }
+      });
 
-        // --- Feedback ---
-        trials.push({
-          type: jsPsychHtmlKeyboardResponse,
-          stimulus: function() {
-            const last = jsPsych.data.get().last(1).values()[0];
-            if (last.correct) {
-              return `<div class="comprehension-box">
-                        <p class="feedback-correct">Correct!</p>
-                        <p style="margin-top:20px; font-size:16px; color:#555;">
-                          Press <span class="key-label">SPACE</span> to continue.
-                        </p>
-                      </div>`;
-            } else {
-              const correctLabel = last.correct_answer === 'f' ? 'Yes' : 'No';
-              return `<div class="comprehension-box">
-                        <p class="feedback-incorrect">Incorrect</p>
-                        <p style="font-size:18px;">The correct answer was <strong>${correctLabel}</strong>.</p>
-                        <p style="margin-top:20px; font-size:16px; color:#555;">
-                          Press <span class="key-label">SPACE</span> to continue.
-                        </p>
-                      </div>`;
-            }
-          },
-          choices: [' '],
-          data: Object.assign({ trial_type_label: 'feedback' }, stimulusMetadata)
-        });
-      }
+      // --- Feedback ---
+      trials.push({
+        type: jsPsychHtmlKeyboardResponse,
+        stimulus: function() {
+          const last = jsPsych.data.get().last(1).values()[0];
+          if (last.correct) {
+            return `<div class="comprehension-box">
+                      <p class="feedback-correct">Correct!</p>
+                      <p style="margin-top:20px; font-size:16px; color:#555;">
+                        Press <span class="key-label">SPACE</span> to continue.
+                      </p>
+                    </div>`;
+          } else {
+            const correctLabel = last.correct_answer === 'f' ? 'Yes' : 'No';
+            return `<div class="comprehension-box">
+                      <p class="feedback-incorrect">Incorrect</p>
+                      <p style="font-size:18px;">The correct answer was <strong>${correctLabel}</strong>.</p>
+                      <p style="margin-top:20px; font-size:16px; color:#555;">
+                        Press <span class="key-label">SPACE</span> to continue.
+                      </p>
+                    </div>`;
+          }
+        },
+        choices: [' '],
+        data: Object.assign({ trial_type_label: 'feedback' }, stimulusMetadata)
+      });
 
       return trials;
     }
