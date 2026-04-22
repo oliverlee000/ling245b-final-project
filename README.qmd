@@ -28,7 +28,11 @@ The original study reported an effect of −0.03 log-seconds (SE=0.01), when rea
 
 ### Materials
 
-All materials - can quote directly from original article - just put the text in quotations and note that this was followed precisely.  Or, quote directly and just point out exceptions to what was described in the original article.
+Stimuli consisted of 24 sentences for each _wh_-type ( _who~obj~_, _how_, _why_, _that_), as well as 74 filler sentences.
+
+An example of one of the sentences is shown in (1). Bolded is the wh-word (_who_obj_), and italicized is the word at which reading time is measured ( _children_, the deepest N in the sentence).
+
+1. The father considered *who* the naive babysitter that the spunky _children_ loved unexpectedly and benevolently handed the toys to __.
 
 ### Procedure	
 
