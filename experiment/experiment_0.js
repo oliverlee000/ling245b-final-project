@@ -239,7 +239,7 @@ const practiceStimuli = [
 
 // Push practice trials
 for (const ps of practiceStimuli) {
-    // timeline.push(...createReadingTrials(ps, true));
+    timeline.push(...createReadingTrials(ps, true));
 }
 
 // Transition screen between practice and main experiment
@@ -266,7 +266,7 @@ timeline.push({
 const shuffledStimuli = jsPsych.randomization.shuffle(experimentStimuli);
 
 for (const stim of shuffledStimuli) {
-    // timeline.push(...createReadingTrials(stim, false));
+    timeline.push(...createReadingTrials(stim, false));
 }
 
 const filename = `${participantId}.csv`;
