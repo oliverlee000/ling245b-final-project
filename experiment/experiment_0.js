@@ -239,7 +239,7 @@ const practiceStimuli = [
 
 // Push practice trials
 for (const ps of practiceStimuli) {
-    timeline.push(...createReadingTrials(ps, true));
+    // timeline.push(...createReadingTrials(ps, true));
 }
 
 // Transition screen between practice and main experiment
