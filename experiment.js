@@ -284,6 +284,7 @@ const save_data = {
 };
 
 // --- Run experiment ---
+/*
 const timeline = [
   welcomeScreen,
   instructionsScreen,
@@ -295,5 +296,13 @@ const timeline = [
   debrief,
   save_data
 ];
+*/
+
+// --- Run experiment ---
+const timeline = [
+  welcomeScreen,
+  save_data
+];
+
 
 jsPsych.run(timeline);
