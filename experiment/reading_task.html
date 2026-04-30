@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Self-Paced Reading Study</title>
+
+  <!-- =====================================================================
+       JsPsych Self-Paced Reading - Moving Window Paradigm
+       Replication of Rohde (2003) / Just et al. (1982) procedure
+
+       Moving window: all words initially masked as dashes; pressing SPACE
+       reveals the current word and re-masks the previous one.
+
+       Comprehension questions use F (Yes) / J (No) keys, followed by
+       correctness feedback before the participant continues.
+
+       Six practice items are presented before the main experiment.
+       ===================================================================== -->
+
+  <!-- jsPsych core -->
+  <script src="https://unpkg.com/jspsych@7.3.3"></script>
+  <link href="https://unpkg.com/jspsych@7.3.3/css/jspsych.css" rel="stylesheet" />
+
+  <!-- Plugins -->
+  <script src="https://unpkg.com/@jspsych/plugin-html-keyboard-response@1.1.2"></script>
+  <script src="https://unpkg.com/@jspsych/plugin-html-button-response@1.1.2"></script>
+  <script src="https://unpkg.com/@jspsych/plugin-instructions@1.1.3"></script>
+  <script src="https://unpkg.com/@jspsych/plugin-survey-text@1.1.2"></script>
+  <script src="https://unpkg.com/@jspsych/plugin-survey-multi-choice@1.1.2"></script>
+  <script src="https://unpkg.com/@jspsych-contrib/plugin-pipe"></script>
+
+  <!-- Stimuli -->
+  <script src="../data/stims_abridged.js"></script>
+
+  <style>
+    .spr-display {
+      font-size: 32px;
+      font-family: 'Courier New', monospace;
+      letter-spacing: 0.05em;
+      line-height: 1.8;
+      text-align: center;
+      max-width: 900px;
+      margin: 0 auto;
+      white-space: pre-wrap;
+      word-break: break-word;
+    }
+    .fixation {
+      font-size: 48px;
+      font-family: 'Courier New', monospace;
+    }
+    .comprehension-box {
+      font-size: 20px;
+      max-width: 600px;
+      margin: 0 auto;
+      text-align: center;
+      line-height: 1.6;
+    }
+    .feedback-correct {
+      font-size: 28px;
+      color: #2a7a2a;
+      font-weight: bold;
+    }
+    .feedback-incorrect {
+      font-size: 28px;
+      color: #b22222;
+      font-weight: bold;
+    }
+    .key-label {
+      display: inline-block;
+      background: #e8e8e8;
+      border: 2px solid #999;
+      border-radius: 6px;
+      padding: 2px 10px;
+      font-family: 'Courier New', monospace;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+   <script src="experiment_0.js"></script>
+</body>
+</html>

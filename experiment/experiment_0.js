@@ -263,6 +263,10 @@ timeline.push({
 // =========================================================================
 // MAIN EXPERIMENT: shuffle and push all experimental stimuli
 // =========================================================================
+
+// Set seed for psuedorandomization to ensure reproducibility
+jsPsych.randomization.setSeed("jspsych");
+jsPsych.randomization.setSeed(seed);
 const shuffledStimuli = jsPsych.randomization.shuffle(experimentStimuli);
 
 for (const stim of shuffledStimuli) {
