@@ -20,7 +20,7 @@ This study replicates Experiment 2a of Kim et al. (2024), which contained a set 
 
 ### Power Analysis
 
-The original study reported an effect of −0.03 log-seconds (SE=0.01), when reading a _why_ and _that_ dependency as opposed to a  _who~obj~_ and _how_ dependency. A power analysis thus indicates that, to achieve 80%, 90%, or 95% power, we need approximately 56, 75, and 93 participants, respectively.
+TBD
 
 ### Planned Sample
 
@@ -55,7 +55,7 @@ The primary difference from the original study is the sample, which we will coll
 
 ### Methods Addendum (Post Data Collection)
 
-You can comment this section out prior to final report with data collection.
+TBD
 
 #### Actual Sample
   Sample size, demographics, data exclusions based on rules spelled out in analysis plan
