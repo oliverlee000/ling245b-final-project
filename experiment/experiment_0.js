@@ -265,7 +265,6 @@ timeline.push({
 // =========================================================================
 
 // Set seed for psuedorandomization to ensure reproducibility
-seed = 100
 jsPsych.randomization.setSeed("jspsych");
 const shuffledStimuli = jsPsych.randomization.shuffle(experimentStimuli);
 
