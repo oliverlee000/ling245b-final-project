@@ -53,6 +53,12 @@ The reading times were log-transformed (Box & Cox, 1964). Two regions of interes
 
 The primary difference from the original study is the sample, which we will collect from Prolific. This should not be associated with a different prediction.
 
+### Pilot A Results
+
+Attached is a ![plot](data/rt_deepest_n.png) replicating Kim et al. (2026)'s critical finding -- namely reading times at the most deeply embedded N across wh-types.
+
+
+
 ### Methods Addendum (Post Data Collection)
 
 TBD
