@@ -1,0 +1,55 @@
+---
+title: "Pilot A analysis"
+format: html
+editor: visual
+---
+
+
+```{r}
+library(tidyverse)
+library(pwr)        
+library(emmeans)
+
+
+files <- c(
+  "4qcemy4k.csv",
+  "bqlvmxzf.csv"
+)
+
+# Read and combine all files from ../stims
+data.raw <- files %>%
+  set_names() %>% 
+  map_dfr(
+    ~ read_csv(file.path("../data", .x)),
+    .id = "source_file"
+  )
+
+stims.raw <- read.csv("../stims/kim_et_al_2024_stimuli_1.csv") # stimulus data direct as csv
+
+# Remove filler and practice entries
+# Focus on only target word for now (i.e. deepest NP in clause)
+data <- data.raw %>%
+  left_join(stims.raw %>% select(item_id, target_word), by = join_by(item_id)) %>%
+  mutate(rt = as.numeric(rt),
+         whword = ifelse(condition == 'a', 'object who', 
+                         ifelse(condition == 'b', 'how',
+                                ifelse(condition == 'c', 'that',
+                                       'why')))) %>% # condition = wh-word used in sentence
+  filter(item_type != 'filler' & item_type != 'practice') %>%
+  mutate(is_target_word = (target_word == word)) %>% # select only deepest embedded NP
+  filter(is_target_word)
+  
+
+
+write.csv(df.raw, "../data/pilot_a_data.csv")
+```
+
+```{r}
+# Compute mean reaction time per condition
+agr <- data %>%
+  group_by(whword) %>%
+  summarise(rt = mean(rt), n = n(), se = sd(rt) / sqrt(n), rt_log = log(rt))
+
+agr
+```
+
