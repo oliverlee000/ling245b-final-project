@@ -108,10 +108,7 @@ function createReadingTrials(stimulus, isPractice) {
     // --- Fully masked sentence + prompt to begin ---
     trials.push({
     type: jsPsychHtmlKeyboardResponse,
-    stimulus: `${movingWindowHTML(words.map(w => '-'.repeat(w.length)), -1).replace(/<\/div>/, '')}</div>
-                <p style="font-size:18px; color:#555; margin-top:20px;">
-                    Press <span class="key-label">SPACE</span> to begin reading.
-                </p>`,
+    stimulus: `${movingWindowHTML(words.map(w => '-'.repeat(w.length)), -1).replace(/<\/div>/, '')}`,
     choices: [' '],
     data: Object.assign({ trial_type_label: 'prompt' }, stimulusMetadata)
     });
