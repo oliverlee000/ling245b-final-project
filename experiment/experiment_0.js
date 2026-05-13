@@ -1,9 +1,21 @@
 const jsPsych = initJsPsych({
       show_progress_bar: true,
-      on_finish: function() {
-        jsPsych.data.displayData('csv');
-      }
+       on_finish: function(){
+        window.location = "https://app.prolific.co/submissions/complete?cc=XXXXXXX"
+    }
     });
+
+// capture info from Prolific
+var subject_id = jsPsych.data.getURLVariable('PROLIFIC_PID');
+var study_id = jsPsych.data.getURLVariable('STUDY_ID');
+var session_id = jsPsych.data.getURLVariable('SESSION_ID');
+
+jsPsych.data.addProperties({
+subject_id: subject_id,
+study_id: study_id,
+session_id: session_id
+});
+
 
 // Unique participant ID
 const participantId = jsPsych.randomization.randomID(8);
