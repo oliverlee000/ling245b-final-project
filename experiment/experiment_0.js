@@ -57,8 +57,8 @@ const consent_trial = {
   `,
   choices: ['I agree', 'I do not agree'],
   button_html: [
-    '<button class="consent-button agree">%choice%</button>',
-    '<button class="consent-button disagree">%choice%</button>'
+    '<button class="jspsych-btn">%choice%</button>',
+    '<button class="jspsych-btn">%choice%</button>'
   ],
   data: {
     trial_type: 'consent'
