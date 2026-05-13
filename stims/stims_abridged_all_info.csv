@@ -1,0 +1,57 @@
+no,exp_id,condition,item_type,item_id,stimulus,target_word
+97,1b_2a,a,1,1b_2a-1,The aide noticed who the generous teacher that the exemplary dean employed graciously and happily gave the prize to.,dean
+98,1b_2a,b,1,1b_2a-1,The aide noticed how the generous teacher that the exemplary dean employed graciously and happily gave the prize to the student.,dean
+99,1b_2a,c,1,1b_2a-1,The aide noticed that the generous teacher that the exemplary dean employed graciously and happily gave the prize to the student.,dean
+100,1b_2a,d,1,1b_2a-1,The aide noticed why the generous teacher that the exemplary dean employed graciously and happily gave the prize to the student.,dean
+101,1b_2a,a,2,1b_2a-2,The student noticed who the tough coach that the popular athlete admired obviously and unnecessarily paid more attention to.,athlete
+102,1b_2a,b,2,1b_2a-2,The student noticed how the tough coach that the popular athlete admired obviously and unnecessarily paid more attention to the quarterback.,athlete
+103,1b_2a,c,2,1b_2a-2,The student noticed that the tough coach that the popular athlete admired obviously and unnecessarily paid more attention to the quarterback.,athlete
+104,1b_2a,d,2,1b_2a-2,The student noticed why the tough coach that the popular athlete admired obviously and unnecessarily paid more attention to the quarterback.,athlete
+105,1b_2a,a,3,1b_2a-3,The pilot noticed who the pretty attendant that the famous airline hired kindly and thoughtfully gave extra attention to.,airline
+106,1b_2a,b,3,1b_2a-3,The pilot noticed how the pretty attendant that the famous airline hired kindly and thoughtfully gave extra attention to her daughter.,airline
+107,1b_2a,c,3,1b_2a-3,The pilot noticed that the pretty attendant that the famous airline hired kindly and thoughtfully gave extra attention to her daughter.,airline
+108,1b_2a,d,3,1b_2a-3,The pilot noticed why the pretty attendant that the famous airline hired kindly and thoughtfully gave extra attention to her daughter.,airline
+109,1b_2a,a,4,1b_2a-4,The panel remembered who the awkward scientist that the unconventional professor liked benignly and hesitantly awarded the grant to.,professor
+110,1b_2a,b,4,1b_2a-4,The panel remembered how the awkward scientist that the unconventional professor liked benignly and hesitantly awarded the grant to the researcher.,professor
+111,1b_2a,c,4,1b_2a-4,The panel remembered that the awkward scientist that the unconventional professor liked benignly and hesitantly awarded the grant to the researcher.,professor
+112,1b_2a,d,4,1b_2a-4,The panel remembered why the awkward scientist that the unconventional professor liked benignly and hesitantly awarded the grant to the researcher.,professor
+113,1b_2a,a,5,1b_2a-5,The pianist remembered who the competent conductor that the beautiful cellist adored secretly and woefully sent a letter to.,cellist
+114,1b_2a,b,5,1b_2a-5,The pianist remembered how the competent conductor that the beautiful cellist adored secretly and woefully sent a letter to the oboist.,cellist
+115,1b_2a,c,5,1b_2a-5,The pianist remembered that the competent conductor that the beautiful cellist adored secretly and woefully sent a letter to the oboist.,cellist
+116,1b_2a,d,5,1b_2a-5,The pianist remembered why the competent conductor that the beautiful cellist adored secretly and woefully sent a letter to the oboist.,cellist
+117,1b_2a,a,6,1b_2a-6,The clerk remembered who the rich banker that the new manager distrusted cautiously and wrongfully cashed a check for.,manager
+118,1b_2a,b,6,1b_2a-6,The clerk remembered how the rich banker that the new manager distrusted cautiously and wrongfully cashed a check for the agent.,manager
+119,1b_2a,c,6,1b_2a-6,The clerk remembered that the rich banker that the new manager distrusted cautiously and wrongfully cashed a check for the agent.,manager
+120,1b_2a,d,6,1b_2a-6,The clerk remembered why the rich banker that the new manager distrusted cautiously and wrongfully cashed a check for the agent.,manager
+121,1b_2a,a,7,1b_2a-7,The busboy revealed who the busy waitress that the talented cook hated happily and leisurely served the meal to.,cook
+122,1b_2a,b,7,1b_2a-7,The busboy revealed how the busy waitress that the talented cook hated happily and leisurely served the meal to the family.,cook
+123,1b_2a,c,7,1b_2a-7,The busboy revealed that the busy waitress that the talented cook hated happily and leisurely served the meal to the family.,cook
+124,1b_2a,d,7,1b_2a-7,The busboy revealed why the busy waitress that the talented cook hated happily and leisurely served the meal to the family.,cook
+125,1b_2a,a,8,1b_2a-8,The mailman revealed who the recent homeowner that the nosy neighbor followed suspiciously and randomly received a letter from.,neighbor
+126,1b_2a,b,8,1b_2a-8,The mailman revealed how the recent homeowner that the nosy neighbor followed suspiciously and randomly received a letter from the government.,neighbor
+127,1b_2a,c,8,1b_2a-8,The mailman revealed that the recent homeowner that the nosy neighbor followed suspiciously and randomly received a letter from the government.,neighbor
+128,1b_2a,d,8,1b_2a-8,The mailman revealed why the recent homeowner that the nosy neighbor followed suspiciously and randomly received a letter from the government.,neighbor
+129,1b_2a,a,9,1b_2a-9,The boxer revealed who the excellent trainer that the fierce competitor utilized effectively and frequently learned his trade from.,competitor
+130,1b_2a,b,9,1b_2a-9,The boxer revealed how the excellent trainer that the fierce competitor utilized effectively and frequently learned his trade from his father.,competitor
+131,1b_2a,c,9,1b_2a-9,The boxer revealed that the excellent trainer that the fierce competitor utilized effectively and frequently learned his trade from his father.,competitor
+132,1b_2a,d,9,1b_2a-9,The boxer revealed why the excellent trainer that the fierce competitor utilized effectively and frequently learned his trade from his father.,competitor
+133,1b_2a,a,10,1b_2a-10,The critic mentioned who the renowned chef that the friendly hostess liked frequently and cheerfully served the appetizer to.,hostess
+134,1b_2a,b,10,1b_2a-10,The critic mentioned how the renowned chef that the friendly hostess liked frequently and cheerfully served the appetizer to the patron.,hostess
+135,1b_2a,c,10,1b_2a-10,The critic mentioned that the renowned chef that the friendly hostess liked frequently and cheerfully served the appetizer to the patron.,hostess
+136,1b_2a,d,10,1b_2a-10,The critic mentioned why the renowned chef that the friendly hostess liked frequently and cheerfully served the appetizer to the patron.,hostess
+137,1b_2a,a,11,1b_2a-11,The assistant mentioned who the lovely bride that the skilled tailor intimidated purposefully and obviously sold the dress to.,tailor
+138,1b_2a,b,11,1b_2a-11,The assistant mentioned how the lovely bride that the skilled tailor intimidated purposefully and obviously sold the dress to a celebrity.,tailor
+139,1b_2a,c,11,1b_2a-11,The assistant mentioned that the lovely bride that the skilled tailor intimidated purposefully and obviously sold the dress to a celebrity.,tailor
+140,1b_2a,d,11,1b_2a-11,The assistant mentioned why the lovely bride that the skilled tailor intimidated purposefully and obviously sold the dress to a celebrity.,tailor
+141,1b_2a,a,12,1b_2a-12,The baker mentioned who the young mother that the sweet child hugged hurriedly and frantically bought the cake for.,child
+142,1b_2a,b,12,1b_2a-12,The baker mentioned how the young mother that the sweet child hugged hurriedly and frantically bought the cake for her sister.,child
+143,1b_2a,c,12,1b_2a-12,The baker mentioned that the young mother that the sweet child hugged hurriedly and frantically bought the cake for her sister.,child
+144,1b_2a,d,12,1b_2a-12,The baker mentioned why the young mother that the sweet child hugged hurriedly and frantically bought the cake for her sister.,child
+145,1b_2a,a,13,1b_2a-13,The surgeon disclosed who the ambitious nurse that the old doctor recommended unfairly and ignorantly promised the cure to.,doctor
+146,1b_2a,b,13,1b_2a-13,The surgeon disclosed how the ambitious nurse that the old doctor recommended unfairly and ignorantly promised the cure to the patient.,doctor
+147,1b_2a,c,13,1b_2a-13,The surgeon disclosed that the ambitious nurse that the old doctor recommended unfairly and ignorantly promised the cure to the patient.,doctor
+148,1b_2a,d,13,1b_2a-13,The surgeon disclosed why the ambitious nurse that the old doctor recommended unfairly and ignorantly promised the cure to the patient.,doctor
+149,1b_2a,a,14,1b_2a-14,The farmer disclosed who the passionate rancher that the boring businessman judged unnecessarily and intensely studied in college with.,businessman
+150,1b_2a,b,14,1b_2a-14,The farmer disclosed how the passionate rancher that the boring businessman judged unnecessarily and intensely studied in college with the professors.,businessman
+151,1b_2a,c,14,1b_2a-14,The farmer disclosed that the passionate rancher that the boring businessman judged unnecessarily and intensely studied in college with the professors.,businessman
+152,1b_2a,d,14,1b_2a-14,The farmer disclosed why the passionate rancher that the boring businessman judged unnecessarily and intensely studied in college with the professors.,businessman

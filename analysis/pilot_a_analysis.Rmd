@@ -24,7 +24,7 @@ data.raw <- files %>%
     .id = "source_file"
   )
 
-stims.raw <- read.csv("../stims/kim_et_al_2024_stimuli_1.csv") # stimulus data direct as csv
+stims.raw <- read.csv("../stims/stims_abridged_all_info.csv") # stimulus data direct as csv
 
 # Remove filler and practice entries
 # Focus on only target word for now (i.e. deepest NP in clause)
