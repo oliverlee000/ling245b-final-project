@@ -1,4 +1,4 @@
-[
+const experimentStimuli = [
   {
     "no": 97,
     "exp_id": "1b_2a",
