@@ -95,7 +95,7 @@ const experimentStimuli = [
     "item_id": "1b_2a-3",
     "stimulus": "The pilot noticed who the pretty attendant that the famous airline hired kindly and thoughtfully gave extra attention to.",
     "target_word": "airline",
-    "question": "Did the attendant give attention to a child?",
+    "question": "Did the airline hire the attendant?",
     "correct_answer": "f"
   },
   {
@@ -139,8 +139,8 @@ const experimentStimuli = [
     "item_id": "1b_2a-4",
     "stimulus": "The panel remembered who the awkward scientist that the unconventional professor liked benignly and hesitantly awarded the grant to.",
     "target_word": "professor",
-    "question": "Was a grant awarded to a researcher?",
-    "correct_answer": "f"
+    "question": "Did the professor dislike the scientist?",
+    "correct_answer": "j"
   },
   {
     "no": 110,
@@ -183,7 +183,7 @@ const experimentStimuli = [
     "item_id": "1b_2a-5",
     "stimulus": "The pianist remembered who the competent conductor that the beautiful cellist adored secretly and woefully sent a letter to.",
     "target_word": "cellist",
-    "question": "Did someone send a letter to the oboist?",
+    "question": "Did the conductor send a letter to someone?",
     "correct_answer": "f"
   },
   {
@@ -227,7 +227,7 @@ const experimentStimuli = [
     "item_id": "1b_2a-6",
     "stimulus": "The clerk remembered who the rich banker that the new manager distrusted cautiously and wrongfully cashed a check for.",
     "target_word": "manager",
-    "question": "Did the banker cash a check for the agent?",
+    "question": "Did the banker cash a check for someone?",
     "correct_answer": "f"
   },
   {
@@ -271,7 +271,7 @@ const experimentStimuli = [
     "item_id": "1b_2a-7",
     "stimulus": "The busboy revealed who the busy waitress that the talented cook hated happily and leisurely served the meal to.",
     "target_word": "cook",
-    "question": "Did the waitress serve a meal to the family?",
+    "question": "Did the waitress serve a meal to someone?",
     "correct_answer": "f"
   },
   {
@@ -315,7 +315,7 @@ const experimentStimuli = [
     "item_id": "1b_2a-8",
     "stimulus": "The mailman revealed who the recent homeowner that the nosy neighbor followed suspiciously and randomly received a letter from.",
     "target_word": "neighbor",
-    "question": "Did the homeowner receive a letter from the government?",
+    "question": "Did the homeowner receive a letter from someone?",
     "correct_answer": "f"
   },
   {
@@ -359,8 +359,8 @@ const experimentStimuli = [
     "item_id": "1b_2a-9",
     "stimulus": "The boxer revealed who the excellent trainer that the fierce competitor utilized effectively and frequently learned his trade from.",
     "target_word": "competitor",
-    "question": "Did the trainer learn his trade from his mother?",
-    "correct_answer": "j"
+    "question": "Did the trainer learn his trade from someoone?",
+    "correct_answer": "f"
   },
   {
     "no": 130,
@@ -403,7 +403,7 @@ const experimentStimuli = [
     "item_id": "1b_2a-10",
     "stimulus": "The critic mentioned who the renowned chef that the friendly hostess liked frequently and cheerfully served the appetizer to.",
     "target_word": "hostess",
-    "question": "Did the chef serve a dessert to a patron?",
+    "question": "Did the chef serve dessert to someone?",
     "correct_answer": "j"
   },
   {
@@ -447,8 +447,8 @@ const experimentStimuli = [
     "item_id": "1b_2a-11",
     "stimulus": "The assistant mentioned who the lovely bride that the skilled tailor intimidated purposefully and obviously sold the dress to.",
     "target_word": "tailor",
-    "question": "Did the bride sell the dress to a celebrity?",
-    "correct_answer": "f"
+    "question": "Did the bride borrow her dress from someone?",
+    "correct_answer": "j"
   },
   {
     "no": 138,
@@ -491,7 +491,7 @@ const experimentStimuli = [
     "item_id": "1b_2a-12",
     "stimulus": "The baker mentioned who the young mother that the sweet child hugged hurriedly and frantically bought the cake for.",
     "target_word": "child",
-    "question": "Did the mother buy a cake for her sister?",
+    "question": "Did the mother buy a cake?",
     "correct_answer": "f"
   },
   {
@@ -535,7 +535,7 @@ const experimentStimuli = [
     "item_id": "1b_2a-13",
     "stimulus": "The surgeon disclosed who the ambitious nurse that the old doctor recommended unfairly and ignorantly promised the cure to.",
     "target_word": "doctor",
-    "question": "Did the nurse promise a cure to the patient?",
+    "question": "Did the doctor recommend the nurse?",
     "correct_answer": "f"
   },
   {
@@ -579,7 +579,7 @@ const experimentStimuli = [
     "item_id": "1b_2a-14",
     "stimulus": "The farmer disclosed who the passionate rancher that the boring businessman judged unnecessarily and intensely studied in college with.",
     "target_word": "businessman",
-    "question": "Did the rancher study in college?",
+    "question": "Did the businessman judge the rancher?",
     "correct_answer": "f"
   },
   {
