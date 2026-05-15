@@ -430,7 +430,7 @@ const completion = {
     const nTotal     = compTrials.count();
     const pct        = nTotal > 0 ? Math.round(100 * nCorrect / nTotal) : '—';
     return `<div style="max-width:600px; margin:0 auto; text-align:center; line-height:1.8;">
-                <h2>Thank you!</h2>
+                <h2>Thank you! Here is your completion code: C10NUF4U</h2>
                 <p>You read <strong>${sprTrials.count()}</strong> words across all sentences.</p>
                 <p>Comprehension accuracy: <strong>${nCorrect} / ${nTotal} (${pct}%)</strong></p>
                 <p>Press <span class="key-label">SPACE</span> to view the raw data.</p>
