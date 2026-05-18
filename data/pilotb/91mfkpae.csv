@@ -1,0 +1,159 @@
+"view_history","rt","trial_type_label","trial_type","trial_index","time_elapsed","internal_node_id","participant_id","stimulus","response","no","exp_id","condition","item_type","item_id","is_practice","word","word_index","word_count","too_fast","correct_answer","response_label","correct"
+"[{""page_index"":0,""viewing_time"":1574},{""page_index"":1,""viewing_time"":506},{""page_index"":2,""viewing_time"":1205}]","3286","instructions","instructions","0","3287","0.0-0.0","91mfkpae","","","","","","","","","","","","","","",""
+"","null","fixation","html-keyboard-response","1","3790","0.0-1.0","91mfkpae","<span class=""fixation"">+</span>","null","P1","practice","practice","practice","p1","1","","","","","","",""
+"","165","prompt","html-keyboard-response","2","3957","0.0-2.0","91mfkpae","<div class=""spr-display"">--- --- --- -- --- ----</div>
+                <p style=""font-size:18px; color:#555; margin-top:20px;"">
+                    Press <span class=""key-label"">SPACE</span> to begin reading.
+                </p>"," ","P1","practice","practice","practice","p1","1","","","","","","",""
+"","172","spr_word","html-keyboard-response","3","4130","0.0-3.0","91mfkpae","<div class=""spr-display"">The --- --- -- --- ----</div>"," ","P1","practice","practice","practice","p1","1","The","0","6","false","","",""
+"","163","spr_word","html-keyboard-response","4","4294","0.0-4.0","91mfkpae","<div class=""spr-display"">The cat --- -- --- ----</div>"," ","P1","practice","practice","practice","p1","1","cat","1","6","false","","",""
+"","159","spr_word","html-keyboard-response","5","4455","0.0-5.0","91mfkpae","<div class=""spr-display"">The cat sat -- --- ----</div>"," ","P1","practice","practice","practice","p1","1","sat","2","6","false","","",""
+"","152","spr_word","html-keyboard-response","6","4609","0.0-6.0","91mfkpae","<div class=""spr-display"">The cat sat on --- ----</div>"," ","P1","practice","practice","practice","p1","1","on","3","6","false","","",""
+"","160","spr_word","html-keyboard-response","7","4770","0.0-7.0","91mfkpae","<div class=""spr-display"">The cat sat on the ----</div>"," ","P1","practice","practice","practice","p1","1","the","4","6","false","","",""
+"","155","spr_word","html-keyboard-response","8","4926","0.0-8.0","91mfkpae","<div class=""spr-display"">The cat sat on the mat.</div>"," ","P1","practice","practice","practice","p1","1","mat.","5","6","false","","",""
+"","659","comprehension","html-keyboard-response","9","5586","0.0-9.0","91mfkpae","<div class=""comprehension-box"">
+                    <p>Was there an animal mentioned in the sentence?</p>
+                    <p>Press <span class=""key-label"">F</span> for <strong>Yes</strong> &nbsp;|&nbsp;
+                    Press <span class=""key-label"">J</span> for <strong>No</strong></p>
+                </div>","f","P1","practice","practice","practice","p1","1","","","","","f","Yes","true"
+"","350","feedback","html-keyboard-response","10","5937","0.0-10.0","91mfkpae","<div class=""comprehension-box"">
+                    <p class=""feedback-correct"">Correct!</p>
+                    <p style=""margin-top:20px; font-size:16px; color:#555;"">
+                    Press <span class=""key-label"">SPACE</span> to continue.
+                    </p>
+                </div>"," ","P1","practice","practice","practice","p1","1","","","","","","",""
+"","null","fixation","html-keyboard-response","11","6441","0.0-11.0","91mfkpae","<span class=""fixation"">+</span>","null","P2","practice","practice","practice","p2","1","","","","","","",""
+"","139","prompt","html-keyboard-response","12","6581","0.0-12.0","91mfkpae","<div class=""spr-display"">--- ------ - --- ----- -- --- -------</div>
+                <p style=""font-size:18px; color:#555; margin-top:20px;"">
+                    Press <span class=""key-label"">SPACE</span> to begin reading.
+                </p>"," ","P2","practice","practice","practice","p2","1","","","","","","",""
+"","159","spr_word","html-keyboard-response","13","6740","0.0-13.0","91mfkpae","<div class=""spr-display"">She ------ - --- ----- -- --- -------</div>"," ","P2","practice","practice","practice","p2","1","She","0","8","false","","",""
+"","149","spr_word","html-keyboard-response","14","6890","0.0-14.0","91mfkpae","<div class=""spr-display"">She bought - --- ----- -- --- -------</div>"," ","P2","practice","practice","practice","p2","1","bought","1","8","false","","",""
+"","143","spr_word","html-keyboard-response","15","7034","0.0-15.0","91mfkpae","<div class=""spr-display"">She bought a --- ----- -- --- -------</div>"," ","P2","practice","practice","practice","p2","1","a","2","8","false","","",""
+"","149","spr_word","html-keyboard-response","16","7184","0.0-16.0","91mfkpae","<div class=""spr-display"">She bought a red ----- -- --- -------</div>"," ","P2","practice","practice","practice","p2","1","red","3","8","false","","",""
+"","153","spr_word","html-keyboard-response","17","7338","0.0-17.0","91mfkpae","<div class=""spr-display"">She bought a red dress -- --- -------</div>"," ","P2","practice","practice","practice","p2","1","dress","4","8","false","","",""
+"","156","spr_word","html-keyboard-response","18","7494","0.0-18.0","91mfkpae","<div class=""spr-display"">She bought a red dress at --- -------</div>"," ","P2","practice","practice","practice","p2","1","at","5","8","false","","",""
+"","165","spr_word","html-keyboard-response","19","7661","0.0-19.0","91mfkpae","<div class=""spr-display"">She bought a red dress at the -------</div>"," ","P2","practice","practice","practice","p2","1","the","6","8","false","","",""
+"","221","spr_word","html-keyboard-response","20","7883","0.0-20.0","91mfkpae","<div class=""spr-display"">She bought a red dress at the market.</div>"," ","P2","practice","practice","practice","p2","1","market.","7","8","false","","",""
+"","354","comprehension","html-keyboard-response","21","8238","0.0-21.0","91mfkpae","<div class=""comprehension-box"">
+                    <p>Did she buy something blue?</p>
+                    <p>Press <span class=""key-label"">F</span> for <strong>Yes</strong> &nbsp;|&nbsp;
+                    Press <span class=""key-label"">J</span> for <strong>No</strong></p>
+                </div>","f","P2","practice","practice","practice","p2","1","","","","","j","Yes","false"
+"","242","feedback","html-keyboard-response","22","8481","0.0-22.0","91mfkpae","<div class=""comprehension-box"">
+                    <p class=""feedback-incorrect"">Incorrect</p>
+                    <p style=""font-size:18px;"">The correct answer was <strong>No</strong>.</p>
+                    <p style=""margin-top:20px; font-size:16px; color:#555;"">
+                    Press <span class=""key-label"">SPACE</span> to continue.
+                    </p>
+                </div>"," ","P2","practice","practice","practice","p2","1","","","","","","",""
+"","null","fixation","html-keyboard-response","23","8982","0.0-23.0","91mfkpae","<span class=""fixation"">+</span>","null","P3","practice","practice","practice","p3","1","","","","","","",""
+"","120","prompt","html-keyboard-response","24","9103","0.0-24.0","91mfkpae","<div class=""spr-display"">--- -------- ------ -------- -- --- ---- ----- -------</div>
+                <p style=""font-size:18px; color:#555; margin-top:20px;"">
+                    Press <span class=""key-label"">SPACE</span> to begin reading.
+                </p>"," ","P3","practice","practice","practice","p3","1","","","","","","",""
+"","159","spr_word","html-keyboard-response","25","9264","0.0-25.0","91mfkpae","<div class=""spr-display"">The -------- ------ -------- -- --- ---- ----- -------</div>"," ","P3","practice","practice","practice","p3","1","The","0","9","false","","",""
+"","150","spr_word","html-keyboard-response","26","9415","0.0-26.0","91mfkpae","<div class=""spr-display"">The children ------ -------- -- --- ---- ----- -------</div>"," ","P3","practice","practice","practice","p3","1","children","1","9","false","","",""
+"","157","spr_word","html-keyboard-response","27","9573","0.0-27.0","91mfkpae","<div class=""spr-display"">The children played -------- -- --- ---- ----- -------</div>"," ","P3","practice","practice","practice","p3","1","played","2","9","false","","",""
+"","155","spr_word","html-keyboard-response","28","9730","0.0-28.0","91mfkpae","<div class=""spr-display"">The children played football -- --- ---- ----- -------</div>"," ","P3","practice","practice","practice","p3","1","football","3","9","false","","",""
+"","163","spr_word","html-keyboard-response","29","9894","0.0-29.0","91mfkpae","<div class=""spr-display"">The children played football in --- ---- ----- -------</div>"," ","P3","practice","practice","practice","p3","1","in","4","9","false","","",""
+"","164","spr_word","html-keyboard-response","30","10059","0.0-30.0","91mfkpae","<div class=""spr-display"">The children played football in the ---- ----- -------</div>"," ","P3","practice","practice","practice","p3","1","the","5","9","false","","",""
+"","151","spr_word","html-keyboard-response","31","10211","0.0-31.0","91mfkpae","<div class=""spr-display"">The children played football in the park ----- -------</div>"," ","P3","practice","practice","practice","p3","1","park","6","9","false","","",""
+"","163","spr_word","html-keyboard-response","32","10375","0.0-32.0","91mfkpae","<div class=""spr-display"">The children played football in the park after -------</div>"," ","P3","practice","practice","practice","p3","1","after","7","9","false","","",""
+"","446","spr_word","html-keyboard-response","33","10822","0.0-33.0","91mfkpae","<div class=""spr-display"">The children played football in the park after school.</div>"," ","P3","practice","practice","practice","p3","1","school.","8","9","false","","",""
+"","414","comprehension","html-keyboard-response","34","11237","0.0-34.0","91mfkpae","<div class=""comprehension-box"">
+                    <p>Were the children outdoors?</p>
+                    <p>Press <span class=""key-label"">F</span> for <strong>Yes</strong> &nbsp;|&nbsp;
+                    Press <span class=""key-label"">J</span> for <strong>No</strong></p>
+                </div>","f","P3","practice","practice","practice","p3","1","","","","","f","Yes","true"
+"","178","feedback","html-keyboard-response","35","11417","0.0-35.0","91mfkpae","<div class=""comprehension-box"">
+                    <p class=""feedback-correct"">Correct!</p>
+                    <p style=""margin-top:20px; font-size:16px; color:#555;"">
+                    Press <span class=""key-label"">SPACE</span> to continue.
+                    </p>
+                </div>"," ","P3","practice","practice","practice","p3","1","","","","","","",""
+"","null","fixation","html-keyboard-response","36","11919","0.0-36.0","91mfkpae","<span class=""fixation"">+</span>","null","P4","practice","practice","practice","p4","1","","","","","","",""
+"","68","prompt","html-keyboard-response","37","11988","0.0-37.0","91mfkpae","<div class=""spr-display"">-- --- --- ---- -- --- ------- ----- ------ --------</div>
+                <p style=""font-size:18px; color:#555; margin-top:20px;"">
+                    Press <span class=""key-label"">SPACE</span> to begin reading.
+                </p>"," ","P4","practice","practice","practice","p4","1","","","","","","",""
+"","158","spr_word","html-keyboard-response","38","12146","0.0-38.0","91mfkpae","<div class=""spr-display"">He --- --- ---- -- --- ------- ----- ------ --------</div>"," ","P4","practice","practice","practice","p4","1","He","0","10","false","","",""
+"","164","spr_word","html-keyboard-response","39","12311","0.0-39.0","91mfkpae","<div class=""spr-display"">He put --- ---- -- --- ------- ----- ------ --------</div>"," ","P4","practice","practice","practice","p4","1","put","1","10","false","","",""
+"","156","spr_word","html-keyboard-response","40","12468","0.0-40.0","91mfkpae","<div class=""spr-display"">He put his ---- -- --- ------- ----- ------ --------</div>"," ","P4","practice","practice","practice","p4","1","his","2","10","false","","",""
+"","147","spr_word","html-keyboard-response","41","12615","0.0-41.0","91mfkpae","<div class=""spr-display"">He put his keys -- --- ------- ----- ------ --------</div>"," ","P4","practice","practice","practice","p4","1","keys","3","10","false","","",""
+"","161","spr_word","html-keyboard-response","42","12778","0.0-42.0","91mfkpae","<div class=""spr-display"">He put his keys on --- ------- ----- ------ --------</div>"," ","P4","practice","practice","practice","p4","1","on","4","10","false","","",""
+"","166","spr_word","html-keyboard-response","43","12945","0.0-43.0","91mfkpae","<div class=""spr-display"">He put his keys on the ------- ----- ------ --------</div>"," ","P4","practice","practice","practice","p4","1","the","5","10","false","","",""
+"","161","spr_word","html-keyboard-response","44","13107","0.0-44.0","91mfkpae","<div class=""spr-display"">He put his keys on the kitchen ----- ------ --------</div>"," ","P4","practice","practice","practice","p4","1","kitchen","6","10","false","","",""
+"","158","spr_word","html-keyboard-response","45","13267","0.0-45.0","91mfkpae","<div class=""spr-display"">He put his keys on the kitchen table ------ --------</div>"," ","P4","practice","practice","practice","p4","1","table","7","10","false","","",""
+"","180","spr_word","html-keyboard-response","46","13447","0.0-46.0","91mfkpae","<div class=""spr-display"">He put his keys on the kitchen table before --------</div>"," ","P4","practice","practice","practice","p4","1","before","8","10","false","","",""
+"","208","spr_word","html-keyboard-response","47","13656","0.0-47.0","91mfkpae","<div class=""spr-display"">He put his keys on the kitchen table before leaving.</div>"," ","P4","practice","practice","practice","p4","1","leaving.","9","10","false","","",""
+"","532","comprehension","html-keyboard-response","48","14190","0.0-48.0","91mfkpae","<div class=""comprehension-box"">
+                    <p>Did he lose his keys?</p>
+                    <p>Press <span class=""key-label"">F</span> for <strong>Yes</strong> &nbsp;|&nbsp;
+                    Press <span class=""key-label"">J</span> for <strong>No</strong></p>
+                </div>","f","P4","practice","practice","practice","p4","1","","","","","j","Yes","false"
+"","301","feedback","html-keyboard-response","49","14492","0.0-49.0","91mfkpae","<div class=""comprehension-box"">
+                    <p class=""feedback-incorrect"">Incorrect</p>
+                    <p style=""font-size:18px;"">The correct answer was <strong>No</strong>.</p>
+                    <p style=""margin-top:20px; font-size:16px; color:#555;"">
+                    Press <span class=""key-label"">SPACE</span> to continue.
+                    </p>
+                </div>"," ","P4","practice","practice","practice","p4","1","","","","","","",""
+"","null","fixation","html-keyboard-response","50","14995","0.0-50.0","91mfkpae","<span class=""fixation"">+</span>","null","P5","practice","practice","practice","p5","1","","","","","","",""
+"","219","prompt","html-keyboard-response","51","15215","0.0-51.0","91mfkpae","<div class=""spr-display"">--- --- ------- ------- -- ---- --- --------</div>
+                <p style=""font-size:18px; color:#555; margin-top:20px;"">
+                    Press <span class=""key-label"">SPACE</span> to begin reading.
+                </p>"," ","P5","practice","practice","practice","p5","1","","","","","","",""
+"","173","spr_word","html-keyboard-response","52","15390","0.0-52.0","91mfkpae","<div class=""spr-display"">The --- ------- ------- -- ---- --- --------</div>"," ","P5","practice","practice","practice","p5","1","The","0","8","false","","",""
+"","169","spr_word","html-keyboard-response","53","15560","0.0-53.0","91mfkpae","<div class=""spr-display"">The old ------- ------- -- ---- --- --------</div>"," ","P5","practice","practice","practice","p5","1","old","1","8","false","","",""
+"","190","spr_word","html-keyboard-response","54","15751","0.0-54.0","91mfkpae","<div class=""spr-display"">The old library ------- -- ---- --- --------</div>"," ","P5","practice","practice","practice","p5","1","library","2","8","false","","",""
+"","187","spr_word","html-keyboard-response","55","15940","0.0-55.0","91mfkpae","<div class=""spr-display"">The old library smelled -- ---- --- --------</div>"," ","P5","practice","practice","practice","p5","1","smelled","3","8","false","","",""
+"","193","spr_word","html-keyboard-response","56","16134","0.0-56.0","91mfkpae","<div class=""spr-display"">The old library smelled of ---- --- --------</div>"," ","P5","practice","practice","practice","p5","1","of","4","8","false","","",""
+"","192","spr_word","html-keyboard-response","57","16327","0.0-57.0","91mfkpae","<div class=""spr-display"">The old library smelled of dust --- --------</div>"," ","P5","practice","practice","practice","p5","1","dust","5","8","false","","",""
+"","191","spr_word","html-keyboard-response","58","16520","0.0-58.0","91mfkpae","<div class=""spr-display"">The old library smelled of dust and --------</div>"," ","P5","practice","practice","practice","p5","1","and","6","8","false","","",""
+"","171","spr_word","html-keyboard-response","59","16691","0.0-59.0","91mfkpae","<div class=""spr-display"">The old library smelled of dust and leather.</div>"," ","P5","practice","practice","practice","p5","1","leather.","7","8","false","","",""
+"","386","comprehension","html-keyboard-response","60","17079","0.0-60.0","91mfkpae","<div class=""comprehension-box"">
+                    <p>Was the setting a library?</p>
+                    <p>Press <span class=""key-label"">F</span> for <strong>Yes</strong> &nbsp;|&nbsp;
+                    Press <span class=""key-label"">J</span> for <strong>No</strong></p>
+                </div>","f","P5","practice","practice","practice","p5","1","","","","","f","Yes","true"
+"","193","feedback","html-keyboard-response","61","17273","0.0-61.0","91mfkpae","<div class=""comprehension-box"">
+                    <p class=""feedback-correct"">Correct!</p>
+                    <p style=""margin-top:20px; font-size:16px; color:#555;"">
+                    Press <span class=""key-label"">SPACE</span> to continue.
+                    </p>
+                </div>"," ","P5","practice","practice","practice","p5","1","","","","","","",""
+"","null","fixation","html-keyboard-response","62","17775","0.0-62.0","91mfkpae","<span class=""fixation"">+</span>","null","P6","practice","practice","practice","p6","1","","","","","","",""
+"","161","prompt","html-keyboard-response","63","17937","0.0-63.0","91mfkpae","<div class=""spr-display"">----- ------ --- ------ ----- ------ --------</div>
+                <p style=""font-size:18px; color:#555; margin-top:20px;"">
+                    Press <span class=""key-label"">SPACE</span> to begin reading.
+                </p>"," ","P6","practice","practice","practice","p6","1","","","","","","",""
+"","187","spr_word","html-keyboard-response","64","18125","0.0-64.0","91mfkpae","<div class=""spr-display"">Maria ------ --- ------ ----- ------ --------</div>"," ","P6","practice","practice","practice","p6","1","Maria","0","7","false","","",""
+"","169","spr_word","html-keyboard-response","65","18295","0.0-65.0","91mfkpae","<div class=""spr-display"">Maria called --- ------ ----- ------ --------</div>"," ","P6","practice","practice","practice","p6","1","called","1","7","false","","",""
+"","188","spr_word","html-keyboard-response","66","18484","0.0-66.0","91mfkpae","<div class=""spr-display"">Maria called her ------ ----- ------ --------</div>"," ","P6","practice","practice","practice","p6","1","her","2","7","false","","",""
+"","170","spr_word","html-keyboard-response","67","18655","0.0-67.0","91mfkpae","<div class=""spr-display"">Maria called her sister ----- ------ --------</div>"," ","P6","practice","practice","practice","p6","1","sister","3","7","false","","",""
+"","172","spr_word","html-keyboard-response","68","18828","0.0-68.0","91mfkpae","<div class=""spr-display"">Maria called her sister every ------ --------</div>"," ","P6","practice","practice","practice","p6","1","every","4","7","false","","",""
+"","181","spr_word","html-keyboard-response","69","19010","0.0-69.0","91mfkpae","<div class=""spr-display"">Maria called her sister every Sunday --------</div>"," ","P6","practice","practice","practice","p6","1","Sunday","5","7","false","","",""
+"","190","spr_word","html-keyboard-response","70","19201","0.0-70.0","91mfkpae","<div class=""spr-display"">Maria called her sister every Sunday morning.</div>"," ","P6","practice","practice","practice","p6","1","morning.","6","7","false","","",""
+"","413","comprehension","html-keyboard-response","71","19616","0.0-71.0","91mfkpae","<div class=""comprehension-box"">
+                    <p>Did Maria call her brother?</p>
+                    <p>Press <span class=""key-label"">F</span> for <strong>Yes</strong> &nbsp;|&nbsp;
+                    Press <span class=""key-label"">J</span> for <strong>No</strong></p>
+                </div>","f","P6","practice","practice","practice","p6","1","","","","","j","Yes","false"
+"","263","feedback","html-keyboard-response","72","19880","0.0-72.0","91mfkpae","<div class=""comprehension-box"">
+                    <p class=""feedback-incorrect"">Incorrect</p>
+                    <p style=""font-size:18px;"">The correct answer was <strong>No</strong>.</p>
+                    <p style=""margin-top:20px; font-size:16px; color:#555;"">
+                    Press <span class=""key-label"">SPACE</span> to continue.
+                    </p>
+                </div>"," ","P6","practice","practice","practice","p6","1","","","","","","",""
+"","768","practice_end","html-keyboard-response","73","20650","0.0-73.0","91mfkpae","<div style=""max-width:600px; margin:0 auto; text-align:center; line-height:1.8;"">
+                <h2>Practice complete!</h2>
+                <p>You are now ready to begin the main experiment.</p>
+                <p>Remember:<br>
+                    <span class=""key-label"">SPACE</span> - advance words<br>
+                    <span class=""key-label"">F</span> - Yes &nbsp;|&nbsp;
+                    <span class=""key-label"">J</span> - No
+                </p>
+                <p>Press <span class=""key-label"">SPACE</span> to start.</p>
+                </div>"," ","","","","","","","","","","","","",""

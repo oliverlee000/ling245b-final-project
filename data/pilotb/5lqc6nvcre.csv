@@ -1,0 +1,9 @@
+"rt","stimulus","response","trial_type","trial_index","plugin_version","time_elapsed"
+"1269","
+    <div class=""instructions"">
+      <h2>Welcome</h2>
+      <p>Thank you for participating in this experiment.</p>
+      <p>In this task, you will read short texts presented segment by segment on the screen.</p>
+      <p>Press <strong>Space</strong> to continue.</p>
+    </div>
+  "," ","html-keyboard-response","0","2.1.0","1272"
