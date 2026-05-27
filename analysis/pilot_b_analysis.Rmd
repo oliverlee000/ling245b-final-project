@@ -120,12 +120,13 @@ data.raw <- files %>%
     .id = "source_file"
   )
 
-stims.raw <- read.csv("../stims/stims_abridged_all_info.csv") # stimulus data direct as csv
+stims.raw <- read.csv("../stims/stims_abridged_all_info.csv")
 
 # Remove filler and practice entries
 # Focus on only target word for now (i.e. deepest NP in clause)
 data <- data.raw %>%
-  left_join(stims.raw %>% select(item_id, target_word), multiple = "first", by = join_by(item_id)) %>%
+  select(!stimulus) %>%
+  left_join(stims.raw %>% select(item_id, target_word, stimulus), multiple = "first", by = join_by(item_id)) %>%
   mutate(rt = as.numeric(rt),
          log_rt = log(rt),
          whword = ifelse(condition == 'a', 'object who', 
@@ -134,11 +135,31 @@ data <- data.raw %>%
                                        'why')))) %>% # condition = wh-word used in sentence
   filter(item_type != 'filler' & item_type != 'practice') %>%
   mutate(is_target_word = (target_word == word)) %>% # select only deepest embedded NP
-  filter(is_target_word)
+  filter(is_target_word, too_fast == FALSE)
   
-data <- data %>% select(source_file, participant_id, trial_type, trial_index, rt, log_rt, condition, item_id, word, word_index, too_fast, target_word, whword, is_target_word)
+data <- data %>% select(source_file, participant_id, trial_index, rt, log_rt, condition, item_id, word, too_fast, whword, stimulus)
 
 write.csv(data, "../data/pilot_b_data.csv")
+```
+
+Here we only include reading time observations taken at the most deeply embedded N. Further, we eliminate all observations where the reading time \< 100 ms (done via the condition too_fast == FALSE).
+
+Description of each field:
+
+-   source_file: the original file in the directory 'data' storing a given participant's data
+
+-   participant_id: 4-char participant id provided by Prolific
+
+-   rt: reading time (log_rt: log transformed reading time)
+
+-   condition: value from 'a'-'d' describing type of stimulus sentence
+
+-   word: word at which reading time was measured
+
+-   whword: one of four values "object who", "why", "how", or "that" – denotes the type of relative clause in the stimulus
+
+```{r}
+summary(data)
 ```
 
 ```{r}
@@ -193,3 +214,52 @@ model <- lmer(
 # View results
 summary(model)
 ```
+
+Here we measure specifically the effect which Kim et al. (2025) found significant: *who~obj~ and how* vs. *why* at the most deeply embedded N.
+
+```{r}
+# Omit why, just cmopare who_obj and how with why
+data_no_that <- data %>%
+  filter(whword != 'that') %>%
+  mutate(is_that = ifelse((whword == 'why'), "why", "who_obj and how"))
+
+agr <- data_no_that %>%
+  group_by(is_that) %>%
+  summarise(y = mean(log_rt), n = n(), se = sd(log_rt) / sqrt(n()))
+
+ggplot(agr, aes(x = is_that, y = y)) +
+  geom_bar(stat = "identity", width = 0.6, color = "black", linewidth = 1) +
+  geom_errorbar(aes(ymin = y - se, ymax = y + se ),   
+                width = 0.08,   linewidth = 1 ) +
+  scale_fill_manual(values = c("object who" = "blue",
+                               "how" = "darkred",
+                               "that" = "green",
+                               "why" = "purple")) +
+  coord_cartesian(ylim = c(5.2, 5.6)) +
+  labs(x = "wh-types", y = "Reaction time (log ms)") +
+  ggtitle("Reading times at the most deeply embedded N") +
+  theme_classic(base_size = 18) +
+  theme(
+    legend.position = "none",
+    axis.text.x = element_text(
+      angle = 20,
+      hjust = 1
+    ),
+    axis.line = element_line(linewidth = 1),
+    axis.ticks = element_line(linewidth = 1)
+  )
+```
+
+```{r}
+model_2 <- lmer(
+  log_rt ~ is_that + 
+    (1 | participant_id) + 
+    (1 | item_id),
+  data = data_no_that
+)
+
+# View results
+summary(model_2)
+```
+
+Here the effect size points in the same direction as Kim et al. (2024) – *why* items are read faster than *who*/how*, but the effect is no longer significant.*
