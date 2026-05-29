@@ -114,9 +114,17 @@ files <- c(
 
 # Read and combine all files from ../stims
 data.raw <- files %>%
-  set_names() %>% 
+  set_names() %>%
   map_dfr(
-    ~ read_csv(file.path("../data/pilotb", .x)) %>% mutate(rt = as.numeric(rt)),
+    ~ suppressMessages(
+        suppressWarnings(
+          read_csv(
+            file.path("../data/pilotb", .x),
+            show_col_types = FALSE
+          ) %>%
+          mutate(rt = as.numeric(rt))
+        )
+      ),
     .id = "source_file"
   )
 
@@ -129,27 +137,22 @@ data <- data.raw %>%
   left_join(stims.raw %>% select(item_id, target_word, stimulus), multiple = "first", by = join_by(item_id)) %>%
   mutate(rt = as.numeric(rt),
          log_rt = log(rt),
-         whword = ifelse(condition == 'a', 'object who', 
+         whword = factor(ifelse(condition == 'a', 'object who', 
                          ifelse(condition == 'b', 'how',
                                 ifelse(condition == 'c', 'that',
-                                       'why')))) %>% # condition = wh-word used in sentence
-  filter(item_type != 'filler' & item_type != 'practice') %>%
-  mutate(is_target_word = (target_word == word)) %>% # select only deepest embedded NP
-  filter(is_target_word, too_fast == FALSE)
+                                       'why'))), levels = c("object who", "how", "that", "why"))) %>% # condition = wh-word used in sentence
+  filter(item_type != 'filler' & item_type != 'practice' & too_fast == FALSE) %>%
+  filter(whword != "object who" | word_index < 19) %>%
+  mutate(is_target_word = (target_word == word)) # select only deepest embedded NP
   
-data <- data %>% select(source_file, participant_id, trial_index, rt, log_rt, condition, item_id, word, too_fast, whword, stimulus)
 
 write.csv(data, "../data/pilot_b_data.csv")
 ```
 
 Here we only include reading time observations taken at the most deeply embedded N. Further, we eliminate all observations where the reading time \< 100 ms (done via the condition too_fast == FALSE).
 
-```{r, skip = TRUE}
- sampled_data <- data %>% filter(participant_id %in% sample(unique(data$participant_id), 5)) %>% filter(whword != 'that') %>% mutate(is_that = ifelse((whword == 'why'), "why", "who_obj and how"))
-
-agr <- sampled_data %>% group_by(participant_id, is_that) %>% summarise(y = mean(log_rt), n = n(), se = sd(log_rt) / sqrt(n()))
-
-ggplot(agr, aes(x = is_that, y = y)) + geom_bar(stat = "identity", width = 0.6, color = "black", linewidth = 1) + geom_errorbar(aes(ymin = y - se, ymax = y + se ),width = 0.08, linewidth = 1 ) + scale_fill_manual(values = c("object who" = "blue", "how" = "darkred", "that" = "green", "why" = "purple")) + labs(x = "wh-types", y = "Reaction time (log ms)") + ggtitle("Reading times at the most deeply embedded N per participant") + theme_classic(base_size = 18) + theme( legend.position = "none", axis.text.x = element_text( angle = 20, hjust = 1 ), axis.line = element_line(linewidth = 1), axis.ticks = element_line(linewidth = 1) ) + facet_wrap(vars(participant_id))
+```{r}
+data_embedded <- data %>% filter(is_target_word) # select only depeest embedded NP
 ```
 
 Description of each field:
@@ -167,12 +170,12 @@ Description of each field:
 -   whword: one of four values "object who", "why", "how", or "that" – denotes the type of relative clause in the stimulus
 
 ```{r}
-summary(data)
+summary(data_embedded)
 ```
 
 ```{r}
 # Compute mean reaction time per condition
-agr <- data %>%
+agr <- data_embedded %>%
   group_by(whword) %>%
   summarise(n = n(), se = sd(log_rt) / sqrt(n()), y = mean(log_rt)) %>%
   mutate(
@@ -207,63 +210,19 @@ ggplot(agr, aes(x = whword, y = y, fill = whword)) +
   )
 ```
 
-```{r}
+Here we measure specifically the effect which Kim et al. (2025) found significant: *who~obj~ and how* vs. *why* at the most deeply embedded N.
+
+```{r, echo=TRUE}
+# Omit that, just compare who_obj and how with why
 library(lme4)
 library(lmerTest)
 
-# Fit mixed-effects regression
-model <- lmer(
-  log_rt ~ whword + 
-    (1 | participant_id) + 
-    (1 | item_id),
-  data = data
-)
-
-# View results
-summary(model)
-```
-
-Here we measure specifically the effect which Kim et al. (2025) found significant: *who~obj~ and how* vs. *why* at the most deeply embedded N.
-
-```{r}
-# Omit why, just cmopare who_obj and how with why
-data_no_that <- data %>%
+data_no_that <- data_embedded %>%
   filter(whword != 'that') %>%
-  mutate(is_that = ifelse((whword == 'why'), "why", "who_obj and how"))
+  mutate(is_why = ifelse((whword == 'why'), "why", "who_obj and how"))
 
-agr <- data_no_that %>%
-  group_by(is_that) %>%
-  summarise(y = mean(log_rt), n = n(), se = sd(log_rt) / sqrt(n()))
-
-ggplot(agr, aes(x = is_that, y = y)) +
-  geom_bar(stat = "identity", width = 0.6, color = "black", linewidth = 1) +
-  geom_errorbar(aes(ymin = y - se, ymax = y + se ),   
-                width = 0.08,   linewidth = 1 ) +
-  scale_fill_manual(values = c("object who" = "blue",
-                               "how" = "darkred",
-                               "that" = "green",
-                               "why" = "purple")) +
-  coord_cartesian(ylim = c(5.2, 5.6)) +
-  labs(x = "wh-types", y = "Reaction time (log ms)") +
-  ggtitle("Reading times at the most deeply embedded N") +
-  theme_classic(base_size = 18) +
-  theme(
-    legend.position = "none",
-    axis.text.x = element_text(
-      angle = 20,
-      hjust = 1
-    ),
-    axis.line = element_line(linewidth = 1),
-    axis.ticks = element_line(linewidth = 1)
-  )
-```
-
-```{}
-```
-
-```{r}
 model_2 <- lmer(
-  log_rt ~ is_that + 
+  log_rt ~ is_why + 
     (1 | participant_id) + 
     (1 | item_id),
   data = data_no_that
@@ -273,39 +232,20 @@ model_2 <- lmer(
 summary(model_2)
 ```
 
+```{}
+```
+
+```{r, echo=TRUE}
+
+```
+
 Here the effect size points in the same direction as Kim et al. (2024) – *why* items are read faster than *who*/how*, but the effect is no longer significant.*
 
-```{r}
+```{r, echo=TRUE}
 # Omit why, just compare who_obj and how with why
 data_no_that_no_how <- data_no_that %>%
   filter(whword != 'word') %>%
   mutate(is_why = ifelse((whword == 'why'), "why", "who_obj"))
-
-agr <- data_no_that_no_how %>%
-  group_by(is_why) %>%
-  summarise(y = mean(log_rt), n = n(), se = sd(log_rt) / sqrt(n()))
-
-ggplot(agr, aes(x = is_why, y = y)) +
-  geom_bar(stat = "identity", width = 0.6, color = "black", linewidth = 1) +
-  geom_errorbar(aes(ymin = y - se, ymax = y + se ),   
-                width = 0.08,   linewidth = 1 ) +
-  scale_fill_manual(values = c("object who" = "blue",
-                               "how" = "darkred",
-                               "that" = "green",
-                               "why" = "purple")) +
-  coord_cartesian(ylim = c(5.2, 5.6)) +
-  labs(x = "wh-types", y = "Reaction time (log ms)") +
-  ggtitle("Reading times at the most deeply embedded N") +
-  theme_classic(base_size = 18) +
-  theme(
-    legend.position = "none",
-    axis.text.x = element_text(
-      angle = 20,
-      hjust = 1
-    ),
-    axis.line = element_line(linewidth = 1),
-    axis.ticks = element_line(linewidth = 1)
-  )
 
 model_3 <- lmer(
   log_rt ~ is_why + 
@@ -316,4 +256,58 @@ model_3 <- lmer(
 
 # View results
 summary(model_3)
+```
+
+```{r}
+agr <- data %>%
+  group_by(word_index, whword) %>%
+  summarise(y = mean(log_rt))
+agr
+```
+
+```{r}
+words <- c(
+  "the",
+  "father",
+  "considered",
+  "wh-element",
+  "the",
+  "naive",
+  "babysitter",
+  "that",
+  "the",
+  "spunky",
+  "children",
+  "loved",
+  "unexpectedly",
+  "and",
+  "benevolently",
+  "handed",
+  "the",
+  "toys",
+  "to",
+  "the",
+  "grandma"
+)
+
+agr %>% 
+  mutate(` ` = whword) %>%
+  ggplot(aes(x = word_index, y = y,
+             color = ` `,
+             group = ` `)) +
+  geom_line(linewidth = 1) +
+  geom_point(size = 2) +
+  theme(
+    axis.text.x = element_text(
+      angle = 90,
+      vjust = 0.5,
+      hjust = 1
+    )
+  ) +
+  scale_x_continuous(
+    breaks = seq_along(words) - 1,
+    labels = words
+  ) +
+  ggtitle("Means of region-by-region reading times") +
+  labs(x="Words", y="Mean reading time (log ms)")
 ```
