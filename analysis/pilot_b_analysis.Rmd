@@ -8,107 +8,13 @@ editor: visual
 library(tidyverse)
 library(pwr)        
 library(emmeans)
+theme_set(theme_minimal())
 
 
 files <- c(
   c(
-    "0j17p08k.csv",
-    "1dg2qhj2b3.csv",
-    "1e17ytgq.csv",
-    "1fqrd6qr.csv",
-    "1lmu0rmy.csv",
-    "1orqqvyp.csv",
-    "1qr6nnt1.csv",
-    "1sftbbwm.csv",
-    "2bomnjjb.csv",
-    "2ea7uxyc.csv",
-    "2ewef3gm.csv",
-    "2odgntx7.csv",
-    "3e3v39z8.csv",
-    "3jtr11xk.csv",
-    "3og97j2k.csv",
-    "3ut1qsdd.csv",
-    "4gjn1seg.csv",
-    "4qcemy4k.csv",
-    "4yxop4r3.csv",
-    "5lqc6nvcre.csv",
-    "5vrdpq0t.csv",
-    "7f2wtp1j.csv",
-    "7lhlpfus.csv",
-    "7mza4pym.csv",
-    "9kd8a7eb.csv",
-    "9nvsempv62.csv",
-    "20frs6ol.csv",
-    "31by1doq.csv",
-    "91mfkpae.csv",
-    "120ypmwg.csv",
-    "352jd0sb.csv",
-    "970gbe0a.csv",
-    "a7afpb9w.csv",
-    "adbunmf0.csv",
-    "ajl3gqra.csv",
-    "bn7akg4o.csv",
-    "bo3a253d.csv",
-    "bqlvmxzf.csv",
-    "c1m9yfql.csv",
-    "cktudb9s.csv",
-    "dsfc282a.csv",
-    "e34duc56.csv",
-    "el2hvftl.csv",
-    "gfzoatpu.csv",
-    "h8nlnku2.csv",
-    "h6253x9m.csv",
-    "hb3mv8ph.csv",
-    "hb4brkxq.csv",
-    "hs2xklzn.csv",
-    "hwsqhjot.csv",
-    "jrj7xzuf.csv",
-    "k2b5yzkl.csv",
-    "k8rnkquz.csv",
-    "kl8k8j1y.csv",
-    "lta397lq.csv",
-    "luzwjk24.csv",
-    "lwvpwcq0.csv",
-    "m1eabfx1.csv",
-    "n8adea4h.csv",
-    "na6hh0ua.csv",
-    "nflshhgq.csv",
-    "o92u56uh.csv",
-    "ogyjt8yg.csv",
-    "ojv4jxxa.csv",
-    "olol1tte.csv",
-    "orybxbxu.csv",
-    "p3taub1f.csv",
-    "pco9vqna.csv",
-    "pm5zycnt.csv",
-    "ppt63ukd.csv",
-    "q330tno2.csv",
-    "qbwjdear.csv",
-    "qfm8ks37.csv",
-    "qgzx1bfu.csv",
-    "r0pm70sc.csv",
-    "r1o8o6o4.csv",
-    "repvu995.csv",
-    "rxur173z.csv",
-    "s3j977x7.csv",
-    "szh4zjou.csv",
-    "tf6nb9bm.csv",
-    "tpt94g2b.csv",
-    "tw3k60gy.csv",
-    "txdtrb48.csv",
-    "u0pme1hk.csv",
-    "u1s85lkk.csv",
-    "u2fs8oqd.csv",
-    "ucyeq6mc.csv",
-    "uu3k1546.csv",
-    "vg74l3ea.csv",
-    "vgp86ou0.csv",
-    "vp4hn41a.csv",
-    "w3yqa2f3.csv",
-    "xthmgyn8.csv",
-    "y14x4t45.csv",
-    "yu3vjzn3.csv",
-    "z25ltc96.csv"
+    "0j17p08k.csv", "1dg2qhj2b3.csv", "1e17ytgq.csv", "1fqrd6qr.csv", "1lmu0rmy.csv", "1orqqvyp.csv",
+    "1qr6nnt1.csv", "1sftbbwm.csv", "2bomnjjb.csv", "2ea7uxyc.csv", "2ewef3gm.csv","2odgntx7.csv","3e3v39z8.csv","3jtr11xk.csv","3og97j2k.csv","3ut1qsdd.csv","4gjn1seg.csv","4qcemy4k.csv","4yxop4r3.csv","5lqc6nvcre.csv","5vrdpq0t.csv","7f2wtp1j.csv","7lhlpfus.csv","7mza4pym.csv","9kd8a7eb.csv","9nvsempv62.csv","20frs6ol.csv","31by1doq.csv","91mfkpae.csv","120ypmwg.csv","352jd0sb.csv","970gbe0a.csv","a7afpb9w.csv","adbunmf0.csv","ajl3gqra.csv","bn7akg4o.csv","bo3a253d.csv","bqlvmxzf.csv","c1m9yfql.csv","cktudb9s.csv","dsfc282a.csv","e34duc56.csv","el2hvftl.csv","gfzoatpu.csv","h8nlnku2.csv","h6253x9m.csv","hb3mv8ph.csv","hb4brkxq.csv","hs2xklzn.csv","hwsqhjot.csv","jrj7xzuf.csv","k2b5yzkl.csv","k8rnkquz.csv","kl8k8j1y.csv","lta397lq.csv","luzwjk24.csv","lwvpwcq0.csv","m1eabfx1.csv","n8adea4h.csv","na6hh0ua.csv","nflshhgq.csv","o92u56uh.csv","ogyjt8yg.csv","ojv4jxxa.csv","olol1tte.csv","orybxbxu.csv","p3taub1f.csv","pco9vqna.csv","pm5zycnt.csv","ppt63ukd.csv","q330tno2.csv","qbwjdear.csv","qfm8ks37.csv","qgzx1bfu.csv","r0pm70sc.csv","r1o8o6o4.csv","repvu995.csv","rxur173z.csv","s3j977x7.csv","szh4zjou.csv","tf6nb9bm.csv","tpt94g2b.csv","tw3k60gy.csv","txdtrb48.csv","u0pme1hk.csv","u1s85lkk.csv","u2fs8oqd.csv","ucyeq6mc.csv","uu3k1546.csv","vg74l3ea.csv","vgp86ou0.csv","vp4hn41a.csv","w3yqa2f3.csv","xthmgyn8.csv","y14x4t45.csv","yu3vjzn3.csv","z25ltc96.csv"
   )
 )
 
@@ -127,13 +33,33 @@ data.raw <- files %>%
       ),
     .id = "source_file"
   )
+```
+
+```{r}
+# Load and preprocess dem data and stim data
+dem_data <- read.csv("../data/pilot_b_demographic_data.csv")
+
+# Clean up col names in dem_data
+colnames(dem_data) <- c("submission_id", "participant_id", "status", "custom_study",
+                        "started_at", "completed_at", "reviewed_at", "archived_at",
+                        "time_taken", "completion_code", "total_approvals", "age",
+                        "sex", "ethnicity", "birth_country", "residence_country",
+                        "nationality", "language", "student", "employment")
+
+dem_data <- dem_data %>%
+  mutate(age = as.numeric(age))
 
 stims.raw <- read.csv("../stims/stims_abridged_all_info.csv")
+```
 
+```{r}
 # Remove filler and practice entries
 # Focus on only target word for now (i.e. deepest NP in clause)
 data <- data.raw %>%
   select(!stimulus) %>%
+  left_join(dem_data %>% filter(status != "RETURNED") %>% select("participant_id", "age", "sex", "ethnicity", "birth_country",
+                                "nationality", "language", "student", "employment"),
+            by = join_by(subject_id == participant_id)) %>%
   left_join(stims.raw %>% select(item_id, target_word, stimulus), multiple = "first", by = join_by(item_id)) %>%
   mutate(rt = as.numeric(rt),
          log_rt = log(rt),
@@ -170,10 +96,6 @@ Description of each field:
 -   whword: one of four values "object who", "why", "how", or "that" – denotes the type of relative clause in the stimulus
 
 ```{r}
-summary(data_embedded)
-```
-
-```{r}
 # Compute mean reaction time per condition
 agr <- data_embedded %>%
   group_by(whword) %>%
@@ -186,19 +108,19 @@ agr <- data_embedded %>%
 
 agr
 
-
-ggplot(agr, aes(x = whword, y = y, fill = whword)) +
-  geom_bar(stat = "identity", width = 0.6, color = "black", linewidth = 1) +
+agr %>%
+  mutate(` ` = whword) %>%
+  ggplot(aes(x = ` `, y = y, fill = ` `)) +
+  geom_bar(stat = "identity", width = 0.6, linewidth = 1) +
   geom_errorbar(aes(ymin = y - se, ymax = y + se ),   
                 width = 0.08,   linewidth = 1 ) +
   scale_fill_manual(values = c("object who" = "blue",
-                               "how" = "darkred",
-                               "that" = "green",
-                               "why" = "purple")) +
+                               "how" = "#D55E00",
+                               "that" = "darkgreen",
+                               "why" = "magenta")) +
   coord_cartesian(ylim = c(5, 5.6)) +
   labs(x = "wh-types", y = "Reaction time (log ms)") +
   ggtitle("Reading times at the most deeply embedded N") +
-  theme_classic(base_size = 18) +
   theme(
     legend.position = "none",
     axis.text.x = element_text(
@@ -207,15 +129,34 @@ ggplot(agr, aes(x = whword, y = y, fill = whword)) +
     ),
     axis.line = element_line(linewidth = 1),
     axis.ticks = element_line(linewidth = 1)
-  )
+  ) +
+  theme_minimal()
+```
+
+```{r}
+
+library(lme4)
+library(lmerTest)
+
+data_embedded <- data_embedded %>%
+  mutate(is_that = factor(ifelse((whword == 'that'), "that", "who_obj, how, or why"),
+                levels = c("who_obj, how, or why", "that")))  
+
+model_1 <- lmer(
+  log_rt ~ is_that + 
+    (1 | participant_id) + 
+    (1 | item_id),
+  data = data_embedded
+)
+
+# View results
+summary(model_1)
 ```
 
 Here we measure specifically the effect which Kim et al. (2025) found significant: *who~obj~ and how* vs. *why* at the most deeply embedded N.
 
 ```{r, echo=TRUE}
-# Omit that, just compare who_obj and how with why
-library(lme4)
-library(lmerTest)
+# Testing the who_obj + how vs. why effect (reported significant)
 
 data_no_that <- data_embedded %>%
   filter(whword != 'that') %>%
@@ -232,7 +173,7 @@ model_2 <- lmer(
 summary(model_2)
 ```
 
-```{}
+```         
 ```
 
 ```{r, echo=TRUE}
@@ -240,6 +181,25 @@ summary(model_2)
 ```
 
 Here the effect size points in the same direction as Kim et al. (2024) – *why* items are read faster than *who*/how*, but the effect is no longer significant.*
+
+```{r}
+# Omit why, just compare who_obj and how with why
+data_no_that_no_how <- data_no_that %>%
+  filter(whword != 'word') %>%
+  mutate(is_why = factor(
+    ifelse((whword == 'how'), "who", "how"),
+  levels = c("who", "how")))
+
+model_3 <- lmer(
+  log_rt ~ is_why + 
+    (1 | participant_id) + 
+    (1 | item_id),
+  data = data_no_that_no_how
+)
+
+# View results
+summary(model_3)
+```
 
 ```{r, echo=TRUE}
 # Omit why, just compare who_obj and how with why
@@ -262,10 +222,6 @@ summary(model_3)
 agr <- data %>%
   group_by(word_index, whword) %>%
   summarise(y = mean(log_rt))
-agr
-```
-
-```{r}
 words <- c(
   "the",
   "father",
@@ -295,8 +251,12 @@ agr %>%
   ggplot(aes(x = word_index, y = y,
              color = ` `,
              group = ` `)) +
-  geom_line(linewidth = 1) +
-  geom_point(size = 2) +
+  geom_line(linewidth = 1, alpha = 0.7) +
+  geom_point(size = 2, alpha = 0.7) +
+  scale_color_manual(values = c("object who" = "blue",
+                               "how" = "#D55E00",
+                               "that" = "darkgreen",
+                               "why" = "purple")) +
   theme(
     axis.text.x = element_text(
       angle = 90,
@@ -310,4 +270,43 @@ agr %>%
   ) +
   ggtitle("Means of region-by-region reading times") +
   labs(x="Words", y="Mean reading time (log ms)")
+```
+
+Cross-cut data by age
+
+```{r}
+# Create dummy value (age < 35), where 35 is the median age
+
+agr <- data %>%
+  filter(!is.na(age)) %>%
+  mutate(is_old = factor(ifelse(age < 35, "Younger than 35", "35 or older"),
+                          levels = c("Younger than 35", "35 or older"))) %>%
+  group_by(is_old, word_index, whword) %>%
+  summarise(y = mean(log_rt))
+
+agr %>% 
+  mutate(` ` = whword) %>%
+  ggplot(aes(x = word_index, y = y,
+             color = ` `,
+             group = ` `)) +
+  geom_line(linewidth = 1, alpha = 0.7) +
+  geom_point(size = 2, alpha = 0.7) +
+  scale_color_manual(values = c("object who" = "blue",
+                               "how" = "#D55E00",
+                               "that" = "darkgreen",
+                               "why" = "purple")) +
+  theme(
+    axis.text.x = element_text(
+      angle = 90,
+      vjust = 0.5,
+      hjust = 1
+    )
+  ) +
+  scale_x_continuous(
+    breaks = seq_along(words) - 1,
+    labels = words
+  ) +
+  ggtitle("Means of region-by-region reading times, split by age") +
+  labs(x="Words", y="Mean reading time (log ms)") +
+  facet_wrap(vars(is_old))
 ```
