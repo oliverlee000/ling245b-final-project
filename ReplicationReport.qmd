@@ -10,14 +10,13 @@ format:
 
 ## Introduction
 
-Kim et al. (2024) present experimental evidence that different wh-filler-gap dependencies are associated with different processing costs during comprehension. More specifically, the experimenters presented Northwestern university students (n=64) with self-paced reading tasks of various wh-filler-gap dependencies, finding that dependencies with longer filler-gap dependencies (e.g. _who~obj~_, _how_) are associated with longer reading times than those with shorter filler-gap dependencies (e.g. _that_~, _why_). They take these findings to be direct consequences of Gibson's (1998) Dependency Locality Theory, in which the length of a filler-gap dependency predicts processing costs in both storage and integration.
+Kim et al. (2024) present experimental evidence that different _wh_-filler-gap dependencies are associated with different processing costs during comprehension. More specifically, the experimenters presented Northwestern university students (n=64) with self-paced reading tasks of various _wh_-filler-gap dependencies, finding that dependencies with longer filler-gap dependencies (e.g. _who~obj~_, _how_) are associated with longer reading times than those with shorter filler-gap dependencies (e.g. _that_~, _why_). They take these findings to be direct consequences of Gibson's (1998) Dependency Locality Theory, in which the length of a filler-gap dependency predicts processing costs in both storage and integration.
 
-This study replicates Experiment 2a of Kim et al. (2024), which contained a set of stimuli with two embedded relative clauses within the wh-dependency. Both the procedure and stimuli from Experiment 2a are directly copied. In doing this replication study, we're specifically looking for whether, at the most deeply embedded N in the stimulus sentence, the _who~obj~_ and _how_ dependencies will be associated with longer reading times than the _why_ and _that_ dependencies.
+This study replicates Experiment 2a of Kim et al. (2024), which contained a set of stimuli with two embedded relative clauses within the _wh_-dependency. Both the procedure and stimuli from Experiment 2a are directly copied. In doing this replication study, we're specifically looking for whether, at the most deeply embedded N in the stimulus sentence, the _who~obj~_ and _how_ dependencies will be associated with longer reading times than the _why_ and _that_ dependencies.
 
 ## Methods
 
-### Power Analysis
-
+Given Kim et al.'s (2024) original estimate 0.03 (SD = 0.01) with n = 64, we would need a sample size of n=56 for 80% power, n=75 for 90% power, and n=93 for 95% power. 
 
 ### Planned Sample
 
@@ -25,9 +24,9 @@ This study replicates Experiment 2a of Kim et al. (2024), which contained a set 
 
 ### Materials
 
-Stimuli consisted of 24 sentences for each _wh_-type ( _who~obj~_, _how_, _why_, _that_), as well as 74 filler sentences.
+Stimuli consisted of 24 sentences for each _wh_-type (_who~obj~_, _how_, _why_, _that_), as well as 74 filler sentences.
 
-An example of one of the sentences is shown in (1). Bolded is the wh-word (_who_obj_), and italicized is the word at which reading time is measured ( _children_, the deepest N in the sentence).
+An example of one of the sentences is shown in (1). Bolded is the _wh_-word (_who~obj~_), and italicized is the word at which reading time is measured (_children_, the deepest N in the sentence).
 
 1. The father considered *who* the naive babysitter that the spunky _children_ loved unexpectedly and benevolently handed the toys to __.
 
@@ -35,7 +34,7 @@ An example of one of the sentences is shown in (1). Bolded is the wh-word (_who_
 
 We follow the experimental procedure directly from Kim et al. (2024), as quoted below:
 
-``Stimuli were presented on a desktop PC using Linger software (Rohde, 2003) employing a self-paced word-by-word moving window paradigm (Just et al., 1982). Each experimental trial was initiated with dashes that masked words in the sentence. As participants pressed a button to move forward, each subsequent word appeared. Participants were instructed to read the sentences as they would normally read and to answer a comprehension question after reading each sentence. The yes/no comprehension question asked participants to press the F (yes) or J (no) keys. An example of a comprehension question is, Was the word “toys” mentioned in the story?. After receiving feedback on their responses, participants pressed the spacebar to proceed to the next experimental item. Six practice items were presented at the beginning of the experiment to allow participants to grasp the experimental format. The experiment took each participant approximately 30–45 mins to complete."
+"Stimuli were presented on a desktop PC using Linger software (Rohde, 2003) employing a self-paced word-by-word moving window paradigm (Just et al., 1982). Each experimental trial was initiated with dashes that masked words in the sentence. As participants pressed a button to move forward, each subsequent word appeared. Participants were instructed to read the sentences as they would normally read and to answer a comprehension question after reading each sentence. The yes/no comprehension question asked participants to press the F (yes) or J (no) keys. An example of a comprehension question is, Was the word “toys” mentioned in the story?. After receiving feedback on their responses, participants pressed the spacebar to proceed to the next experimental item. Six practice items were presented at the beginning of the experiment to allow participants to grasp the experimental format. The experiment took each participant approximately 30–45 mins to complete."
 
 ### Analysis Plan
 
@@ -52,8 +51,9 @@ The primary difference from the original study is the sample, which we will coll
 
 ### Pilot A Results
 
-Attached is a ![plot](data/rt_deepest_n.png) replicating Kim et al. (2026)'s critical finding -- namely reading times at the most deeply embedded N across wh-types.
+Below are the reading times at the most deeply embedded N across _wh_-types -- i.e. Kim et al.'s (2024) main variable of interest.
 
+![Pilot A results for the reading times at the most deeply embedded N across _wh_-types](analysis/pilot_a_deepest_n.png)
 
 
 ### Methods Addendum (Post Data Collection)
@@ -66,17 +66,14 @@ None
 
 ## Results
 
-
-### Data preparation
-
-Data preparation following the analysis plan.
-	
 ```{r include=F}
 
 # Load packages
 library(tidyverse)
 library(pwr)        
 library(emmeans)
+library(lme4)
+library(lmerTest)
 theme_set(theme_minimal())
 
 # Import data from Prolific
@@ -126,7 +123,7 @@ data <- data.raw %>%
   left_join(dem_data %>% filter(status != "RETURNED") %>% select("participant_id", "age", "sex", "ethnicity", "birth_country",
                                 "nationality", "language", "student", "employment"),
             by = join_by(subject_id == participant_id)) %>%
-  left_join(stims.raw %>% select(item_id, target_word, stimulus), multiple = "first", by = join_by(item_id)) %>% # condition = wh-word used in sentence
+  left_join(stims.raw %>% select(item_id, target_word, stimulus), multiple = "first", by = join_by(item_id)) %>% # condition = _wh_-word used in sentence
   filter(condition == 'a' | word_index < 19) %>%
   filter(item_type != 'filler' & item_type != 'practice' & too_fast == FALSE) 
 
@@ -144,14 +141,16 @@ data <- data %>%
 
 ### Confirmatory analysis
 
-First we replicate Kim et al.'s (2024) main finding (their Experiment 2a): namely that at the most deeply embedded NP, there is a clear asymmetry in reading times across wh-types, predicted by the structural height of the wh-element.
+#### Reading times at most deeply embedded N
+
+First we replicate Kim et al.'s (2024) main finding (their Experiment 2a): namely that at the most deeply embedded NP, there is a clear asymmetry in reading times across _wh_-types, predicted by the structural height of the _wh_-element.
 
 
-Kim et al.'s (2024) results are shown in the graph below. Here we see a clear descending hierarchy in wh-types, _who~obj~_ > _how_ > _that_ > _why_, which follows what generativist syntax predicts. 
+Kim et al.'s (2024) results are shown in the graph below. Here we see a clear descending hierarchy in _wh_-types, _who~obj~_ > _how_ > _that_ > _why_, which follows what generativist syntax predicts. 
 
-![Reading times acrosss different wh-types at the most deeply embedded N. (Kim et al. 2024, Figure 5)](original_study_figs/fig_5.png)
+![Reading times acrosss different _wh_-types at the most deeply embedded N. (Kim et al. 2024, Figure 5)](original_study_figs/fig_5.png)
 
-By contrast, in our replication study, we do not find any clear descending hierarchy between the wh-types. 
+By contrast, in our replication study, we do not find any clear descending hierarchy between the _wh_-types. 
 
 ```{r include=F}
 # Compute mean reaction time per condition
@@ -178,7 +177,7 @@ agr %>%
                                "that" = "darkgreen",
                                "why" = "magenta")) +
   coord_cartesian(ylim = c(5, 5.6)) +
-  labs(x = "wh-types", y = "Reaction time (log ms)") +
+  labs(x = "_wh_-types", y = "Reaction time (log ms)") +
   ggtitle("Reading times at the most deeply embedded N") +
   theme(
     legend.position = "none",
@@ -193,14 +192,15 @@ agr %>%
 ```
 
 
-While, in the original study, Kim et al. (2024) were unable to find significant effects between _individual_ wh-types, they do identify significant effects when clustering wh-types together, as shown in their Table 9:
+While, in the original study, Kim et al. (2024) were unable to find significant effects between _individual_ _wh_-types, they do identify significant effects when clustering _wh_-types together, as shown in their Table 9:
 
 ![Summary of mixed-effect model outputs. (Kim et al. 2024, Table 9)](original_study_figs/table_9.png)
 
 ```{r include = F}
 # Testing the who_obj + how vs. why effect (reported significant)
 
-data_no_that <- data_embedded %>%
+data_no_that <- data %>%
+  filter(is_target_word) %>%
   filter(whword != 'that') %>%
   mutate(is_why = ifelse((whword == 'why'), "why", "who_obj and how"))
 
@@ -219,7 +219,9 @@ We, by contrast, do not find any significant effects when running a mixed-effect
 
 ![Mixed-effect model results. Highlighted in red is the effect that Kim et al. (2024) reported significant. ](analysis/pilot_b_log_results.png)
 
-Finally, we look at reading times at every word in the stimulus, rather than just the most deeply embedded N. Compared to the original study, we see that reading times across each word in the sentence follows roughly the same trajectory: there is one peak in the middle and one in the end. But the contrast between wh-types, which was already low in the original study, is virtually nonexistent in the replication.
+#### Reading times at each word
+
+Finally, we look at reading times at every word in the stimulus, rather than just the most deeply embedded N. Compared to the original study, we see that reading times across each word in the sentence follows roughly the same trajectory: there is one peak in the middle and one in the end. But the contrast between _wh_-types, which was already low in the original study, is virtually nonexistent in the replication.
 
 ![Original study's report of reading times per word. (Kim et al. 2024, Figure 4)](original_study_figs/fig_4.png)
 
@@ -233,7 +235,7 @@ words <- c(
   "the",
   "father",
   "considered",
-  "wh-element",
+  "_wh_-element",
   "the",
   "naive",
   "babysitter",
@@ -285,7 +287,7 @@ agr %>%
 
 ### Exploratory analyses
 
-To assess whether this failure of replication was due to a different sample demographic, we triangulate the analysis by age. Specifically, we split the data in two groups, age < 35 and age >= 35 (the median age).
+To assess whether this failure of replication was due to a different sample demographic, we split the data by age, namely into two groups, age < 35 and age >= 35 (where 35 is the median age).
 
 ```{r include=F}
 # Create dummy value (age < 35), where 35 is the median age
@@ -327,7 +329,7 @@ agr %>%
   facet_wrap(vars(is_old))
 ```
 
-At the most deeply embedded N (children), the contrast between wh-elements is slightly greater for participants younger than 35 than those older than 35. This patterns with what we see in the original study, which took its sample from a body of Northwestern undergrads.
+At the most deeply embedded N (children), the contrast between _wh_-elements is slightly greater for participants younger than 35 than those older than 35. In fact, the younger participants pattern more closely to Kim et al.'s (2024) findings, with the _why_ reading times being the lowest at the spillover region `unexpectedly'. 
 
 
 
@@ -335,17 +337,17 @@ At the most deeply embedded N (children), the contrast between wh-elements is sl
 
 ### Summary of Replication Attempt
 
-Open the discussion section with a paragraph summarizing the primary result from the confirmatory analysis and the assessment of whether it replicated, partially replicated, or failed to replicate the original result.  
-
 Clearly, we failed to replicate the main effects reported by Kim et al. (2024). While the original study detected a significant effect between the _who~obj~_ and _how_ groups vs. the _why_ group, we did not detect any significant effects.
 
 ### Commentary
 
-We can turn to two potential reasons to explain why we failed to replicate the original study's effect. First, our study used a markedly different sample demographic: while the original study had a sample of 64 Northwestern students, our study's sample was collected online, and therefore was far more heterogeneous. For one, the median age of the sample was significantly older. Indeed, when crosscutting the data by median age (34), we find that the younger participants patterned closer to the original study's findings than the older participants. Nonetheless, we should expect that the effect Kim et al. (2024) found to be generalizable across age groups, given that it reflects general syntactic knowledge of English.
+We can turn to two potential reasons to explain why we failed to replicate the original study's effect. First, our study used a markedly different sample demographic: while the original study had a sample of 64 Northwestern students, our study's sample was collected online, and therefore was far more heterogeneous. For one, the median age of the sample was significantly older. Indeed, when crosscutting the data by median age (34), we find that the younger participants patterned closer to the original study's findings than the older participants.
 
 A second reason for why we failed to replicate Kim et al.'s (2024) main effect was that their effect size was not very strong to begin with. Their effect size --- for contrasting the _who~obj~_ and _how_ groups vs. the _why_ group --- was only 0.03 log ms. Additionally, this coefficient was only one of several coefficients that they used to test their hypothesis. Considering that none of their other coefficients were significant, this raises the question of whether the reason they found a significant effect was due to _p_-hacking or _p_-hacking-adjacent practices.
 
-Indeed, we can ask if, had we replicated the original effect, we truly would have offered strong evidence that the structural height of a wh-element predicts processing costs. The most convincing piece of evidence for this would have been to find significant effects between each _individual_ wh-type (e.g. _who~obj~_ > _how_ > _why_), rather than between groups of wh-types (e.g. _who~obj~_/ _how_ > _why_). But not even the original study found such effects to be significant. Thus, while we failed to replicate the main _effect_ of Kim et al. (2024), we are even further away from demonstrating the hypothesis that Kim eta l. (2024) propose.
+Indeed, we can ask if, had we replicated the original effect, we truly would have offered strong evidence that the structural height of a _wh_-element predicts processing costs. The most convincing piece of evidence for this would have been to find significant effects between each _individual_ _wh_-type (e.g. _who~obj~_ > _how_ > _why_), rather than between groups of _wh_-types (e.g. _who~obj~_/ _how_ > _why_). But not even the original study found such effects to be significant. Thus, while we failed to replicate the main _effect_ of Kim et al. (2024), we are even further away from demonstrating the hypothesis that Kim eta l. (2024) propose.
 
-Kim, N., Wellwood, A., & Yoshida, M. (2024). Processing wh-filler-gap dependencies. Quarterly Journal of Experimental Psychology, 77(12), 2391-2417.
+Finally, we can loosely speculate some reasons for why the younger participants in our study (age < 35) displayed stronger reading time asymmetries between _wh_-types than the older participants. In general, the average reading time of younger participants per word was lower than older participants. This may suggest that older participants experienced greater cognitive load over the course of the task, which may have masked any differences between the different _wh_-items. In other words, if there was already a high floor in the processing required to read a given word, the relatively lower processing difficulty associated with the _why_ items may be obscured. Nonetheless, it is worth noting that we should not expect processing asymmetries between _wh_-items to be contingent on age, given that it reflects general syntactic knowledge of English.
+
+Kim, N., Wellwood, A., & Yoshida, M. (2024). Processing _wh_-filler-gap dependencies. Quarterly Journal of Experimental Psychology, 77(12), 2391-2417.
 

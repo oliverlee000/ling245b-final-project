@@ -343,8 +343,8 @@ Use the appropriate pwr function for your test type:
 
 ```{r}
 # For t-tests
-your_d <- -0.03/0.08
-your_d <- t_to_d(-2.18, 64 - 14)$d
+# The main finding was done via logisitc regression, so we compute d using d = log(OR) × (√3/π)
+your_d <- 0.03 * sqrt(3) / pi
 pwr.t.test(d = your_d, sig.level = 0.05, power = 0.80, type = "two.sample", 
            alternative = "two.sided")
 '''
